@@ -1,0 +1,326 @@
+#VRML_SIM V7.4.3 utf8
+WorldInfo {
+  info [
+    "Description"
+    "Author: first name last name <e-mail>"
+    "Date: DD MMM YYYY"
+  ]
+}
+Viewpoint {
+  orientation -0.251765 -0.934161 -0.252899 1.64319
+  position -2.01376 0.951269 0.0255925
+}
+Background {
+  skyColor [
+    0.4 0.7 1
+  ]
+}
+DirectionalLight {
+  direction -1 -1 -1
+}
+DirectionalLight {
+  direction 1 -1 1
+}
+RectangleArena {
+  floorSize 2 2
+  floorTextureUrl [
+    "textures/Floor_10px_small_Inter_center_boarder_infra-red31_1024.png"
+  ]
+  floorTileSize 2 2
+  wallTextureUrl [
+    "textures/griffith-logo.png"
+  ]
+}
+Solid {
+  translation -0.499 0.0109913 -0.499
+  children [
+    DEF BALL Shape {
+      appearance Appearance {
+        material Material {
+        }
+        texture ImageTexture {
+          url [
+            "textures/football.png"
+          ]
+        }
+      }
+      geometry Sphere {
+        radius 0.011
+        subdivision 2
+      }
+    }
+  ]
+  name "Ball"
+  boundingObject USE BALL
+  physics Physics {
+    damping Damping {
+      linear 0
+      angular 0
+    }
+  }
+}
+Solid {
+  translation 0 0.025 0.82
+  children [
+    DEF Static_Obstacle Shape {
+      appearance Appearance {
+        texture ImageTexture {
+          url [
+            "textures/do_not_enter.png"
+          ]
+        }
+      }
+      geometry Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  boundingObject USE Static_Obstacle
+}
+Solid {
+  translation -0.33 0.025 0.83
+  children [
+    DEF Static_Obstacle Shape {
+      appearance Appearance {
+        texture ImageTexture {
+          url [
+            "textures/do_not_enter.png"
+          ]
+        }
+      }
+      geometry Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  boundingObject USE Static_Obstacle
+}
+Solid {
+  translation -0.33 0.025 0.5
+  children [
+    DEF Static_Obstacle Shape {
+      appearance Appearance {
+        texture ImageTexture {
+          url [
+            "textures/do_not_enter.png"
+          ]
+        }
+      }
+      geometry Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  boundingObject USE Static_Obstacle
+}
+Solid {
+  translation 0 0.025 0.5
+  children [
+    DEF Static_Obstacle Shape {
+      appearance Appearance {
+        texture ImageTexture {
+          url [
+            "textures/do_not_enter.png"
+          ]
+        }
+      }
+      geometry Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  boundingObject USE Static_Obstacle
+}
+Solid {
+  translation 0 0.025 0.16
+  children [
+    DEF Static_Obstacle Shape {
+      appearance Appearance {
+        texture ImageTexture {
+          url [
+            "textures/do_not_enter.png"
+          ]
+        }
+      }
+      geometry Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  boundingObject USE Static_Obstacle
+}
+Solid {
+  translation -0.5 0.025 -0.66
+  children [
+    DEF Static_Obstacle Shape {
+      appearance Appearance {
+        texture ImageTexture {
+          url [
+            "textures/do_not_enter.png"
+          ]
+        }
+      }
+      geometry Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  boundingObject USE Static_Obstacle
+}
+Solid {
+  translation -0.16 0.025 -0.33
+  children [
+    DEF Static_Obstacle Shape {
+      appearance Appearance {
+        texture ImageTexture {
+          url [
+            "textures/do_not_enter.png"
+          ]
+        }
+      }
+      geometry Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  boundingObject USE Static_Obstacle
+}
+Solid {
+  translation 0.17 0.025 -0.32
+  children [
+    DEF Static_Obstacle Shape {
+      appearance Appearance {
+        texture ImageTexture {
+          url [
+            "textures/do_not_enter.png"
+          ]
+        }
+      }
+      geometry Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  boundingObject USE Static_Obstacle
+}
+Solid {
+  translation 0.5 0.025 -0.32
+  children [
+    DEF Static_Obstacle Shape {
+      appearance Appearance {
+        texture ImageTexture {
+          url [
+            "textures/do_not_enter.png"
+          ]
+        }
+      }
+      geometry Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  boundingObject USE Static_Obstacle
+}
+Solid {
+  translation -0.17 0.025 -0.67
+  children [
+    DEF Static_Obstacle Shape {
+      appearance Appearance {
+        texture ImageTexture {
+          url [
+            "textures/do_not_enter.png"
+          ]
+        }
+      }
+      geometry Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  boundingObject USE Static_Obstacle
+}
+Solid {
+  translation -0.34 0.025 -0.17
+  children [
+    DEF Static_Obstacle Shape {
+      appearance Appearance {
+        texture ImageTexture {
+          url [
+            "textures/do_not_enter.png"
+          ]
+        }
+      }
+      geometry Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  boundingObject USE Static_Obstacle
+}
+Solid {
+  translation -0.67 0.025 -0.17
+  children [
+    DEF Static_Obstacle Shape {
+      appearance Appearance {
+        texture ImageTexture {
+          url [
+            "textures/do_not_enter.png"
+          ]
+        }
+      }
+      geometry Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  boundingObject USE Static_Obstacle
+}
+Solid {
+  translation -0.499 0.025 -0.34
+  children [
+    DEF Dynamic_Obstacle Shape {
+      appearance Appearance {
+        texture ImageTexture {
+          url [
+            "textures/road_closed2.png"
+          ]
+        }
+      }
+      geometry Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  boundingObject USE Dynamic_Obstacle
+}
+Solid {
+  translation -0.68 0.025 -0.499
+  children [
+    DEF Dynamic_Obstacle Shape {
+      appearance Appearance {
+        texture ImageTexture {
+          url [
+            "textures/road_closed2.png"
+          ]
+        }
+      }
+      geometry Box {
+        size 0.05 0.05 0.05
+      }
+    }
+  ]
+  boundingObject USE Dynamic_Obstacle
+}
+EPuck {
+  hidden translation_1 -0.026 0.0200012 0
+  hidden rotation_1 0 0 1 7.96124e-11
+  hidden translation_2 0.026 0.0200012 0
+  hidden rotation_2 0 0 1 7.96654e-11
+  translation -0.165 -6.39195e-05 0.83
+  rotation 0 0 1 6.06195e-06
+  controller "epuckwhiteboard"
+  groundSensorsSlot [
+    EPuck_GroundSensorsModule {
+    }
+  ]
+}
