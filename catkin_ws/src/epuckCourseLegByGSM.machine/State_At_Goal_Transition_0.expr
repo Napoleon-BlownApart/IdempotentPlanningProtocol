@@ -1,0 +1,1 @@
+(wbcCurrentPosition.goal().x()!=wbcGoal_Control.goal().x())||(wbcCurrentPosition.goal().y()!=wbcGoal_Control.goal().y())

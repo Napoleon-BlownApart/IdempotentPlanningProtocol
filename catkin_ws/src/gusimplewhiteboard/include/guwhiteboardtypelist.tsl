@@ -1,0 +1,45 @@
+,                                           atomic,    wb_reserved_SubscribeToAllTypes,     "*",                                Global subscription type. Do not add content to this type, it is for global subscriptions only
+std::string,                                atomic,    Print,                               "Print",                            print to stdout
+std::string,                                atomic,    Say,                                 "Say",                              speech output message
+std::string,                                atomic,    Speech,                              "Speech",                           debug speech message
+std::string,                                atomic,    QSay,                                "QSay",                             speech output message (queued)
+std::string,                                atomic,    QSpeech,                             "QSpeech",                          debug speech message (queued)
+bool,                                       nonatomic, SpeechOutput,                        "SpeechOutput",                     toggle, treat speech messages as silent output unless this is turned on
+class:FSMControlStatus,                     atomic,    FSM_Control,                         "fsm_control",                      Suspend, Resume, or Restart a finite state machine (clfsm)
+class:FSMControlStatus,                     atomic,    FSM_Status,                          "fsm_status",                       Current status indicating the suspended state of all FSMs.  The highest bit that is always set is the number of machines plus one.
+class:FSMNames,                             atomic,    FSM_Names,                           "fsm_names",                        Request or return the names of the currently loaded FSMs.  End of list is denoted by an empty string.  Requests need to put an empty string into the first FSM name;
+class:FSMState,                             atomic,    FSM_States,                          "fsm_states",                       Idempotent Message publicising the state -about to be executed- (0-254) of up-to the first 128 machines (0-127).  State -INVALDMACHINE- (255) is posted for MachineIDs that are not currently loaded.
+class:SENSORS_EPuckAccel_Control,           nonatomic, SENSORS_EPuckAccel_Control,          "EPuckAccel_Control",               Controls which accelerometer sensors are on/off
+class:SENSORS_EPuckAccel_Status,            nonatomic, SENSORS_EPuckAccel_Status,           "EPuckAccel_Status",                Reports status of accelerometers (on/off & value)
+class:SENSORS_EPuckCamera_ControlStatus,    nonatomic, SENSORS_EPuckCamera_Control,         "EPuckCamera_Control",              Controls Camera Settings
+class:SENSORS_EPuckCamera_ControlStatus,    nonatomic, SENSORS_EPuckCamera_Status,          "EPuckCamera_Status",               Reports Camera data
+class:SENSORS_EPuckGSM_Control,             nonatomic, SENSORS_EPuckGSM_Control,            "EPuckGSM_Control",                 Controls which accelerometer sensors are on/off
+class:SENSORS_EPuckGSM_Status,              nonatomic, SENSORS_EPuckGSM_Status,             "EPuckGSM_Status",                  Reports status of accelerometers (on/off & value)
+class:SENSORS_EPuckLight_Control,           nonatomic, SENSORS_EPuckLight_Control,          "EPuckLight_Control",               Controls which accelerometer sensors are on/off
+class:SENSORS_EPuckLight_Status,            nonatomic, SENSORS_EPuckLight_Status,           "EPuckLight_Status",                Reports status of accelerometers (on/off & value)
+class:SENSORS_EPuckProximity_Control,       nonatomic, SENSORS_EPuckProximity_Control,      "EPuckProximity_Control",           Controls which accelerometer sensors are on/off
+class:SENSORS_EPuckProximity_Status,        nonatomic, SENSORS_EPuckProximity_Status,       "EPuckProximity_Status",            Reports status of accelerometers (on/off & value)
+class:DifferentialRobotControlStatus,       nonatomic, DifferentialRobotControl,            "DifferentialRobotControl",         Controls Differential Motors
+class:DifferentialRobotControlStatus,       nonatomic, DifferentialRobotStatus,             "DifferentialRobotStatus",          Reports status of Differential Motors
+class:EMITTERS_EPuckLED_ControlStatus,      nonatomic, EMITTERS_EPuckLED_Control,           "EPuckLED_Control",                 Controls which LED Emitters are on/off and what intensity
+class:EMITTERS_EPuckLED_ControlStatus,      nonatomic, EMITTERS_EPuckLED_Status,            "EPuckLED_Status",                  Reports status of LED Emitters (on/off & intensity)
+class:GOAL_Control,                         nonatomic, GOAL_Control,                        "GOAL_Control",                     GOAL Control Message
+class:GOAL_Status,                          nonatomic, GOAL_Status,                         "GOAL_Status",                      GOAL Status Message
+class:SENSORS_Intersection_Status,          nonatomic, SENSORS_Intersection_Status,         "Intersection_Status",              Intersection Status Message
+class:Direction_Control,                    nonatomic, Direction_Control,                   "Direction_Control",                Direction Control (which way to go F/L/R/AR/AL)
+class:SENSORS_Obstacle_On_Path,             nonatomic, SENSORS_Obstacle_On_Path,            "Obstacle_On_Path",                 Obstacle On Path (true between detecting it and returning to intersection)
+class:Angle,                                nonatomic, Angle,                               "Angle",                            Angle of the epuck (0 = North)
+class:SENSORS_Obstacle,                     nonatomic, SENSORS_Obstacle,                    "Obstacle",                         Obstacle (true only while the obstacle is there)
+class:Current_Position,                     nonatomic, Current_Position,                    "Current_Position",                 Current Position
+class:Plan_Planner_Settings,                nonatomic, Plan_Planner_Settings,               "Plan_Planner_Settings",            Planner Settings
+class:Plan_Filename,                        nonatomic, Plan_Domain_Filename,                "Plan_Domain_Filename",             Filename of the PDDL Domain the Planner will try to solve
+class:Plan_Filename,                        nonatomic, Plan_Problem_Filename,               "Plan_Problem_Filename",            Filename of the PDDL Problem the Planner will try to solve
+class:Plan_Filename,                        nonatomic, Plan_Obstacles_Filename,             "Plan_Obstacles_Filename",          Filename of the Obstacle List
+class:Plan_Filename,                        nonatomic, Plan_Plan_Filename,                  "Plan_Plan_Filename",               Filename of the Plan
+class:Plan_Control_Status,                  nonatomic, Plan_Manager_Status,                 "Manager_Status",                   Plan Manager Status
+class:Plan_Control_Status,                  nonatomic, Plan_Planner_Status,                 "Planner_Status",                   Planner Status
+class:Plan_Goal_List,                       nonatomic, Plan_Goal_List,                      "Plan_Goal_List",                   List of sub-goals (works like FSMNames)
+class:Plan_Obstacle_List,                   nonatomic, Plan_Obstacle_List,                  "Plan_Obstacle_List",               List of obstacles (works like FSMNames)
+class:Epuck_Test,                           nonatomic, Epuck_Test_Control,                  "Epuck_Test_Control",               Epuck Test Control Message
+class:Epuck_Test,                           nonatomic, Epuck_Test_Status,                   "Epuck_Test_Status",                Epuck Test Status Message
+class:Epuck_Test,                           nonatomic, Epuck_Test_Start_Up,                 "Epuck_Test_Start_Up",              Epuck Test Start Up State Message

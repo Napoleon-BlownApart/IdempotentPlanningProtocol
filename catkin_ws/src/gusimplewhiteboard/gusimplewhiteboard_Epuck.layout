@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="catkin_make_DEBUG" />
+	<File name="include/WBFunctor_types_generated.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="138181" topLine="2596" />
+		</Cursor>
+	</File>
+	<File name="src/gutcpinjectionwhiteboardobject.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="81" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="CMakeLists.txt" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="601" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include/typeClassDefs/wb_sensors_epuck_light_control.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3890" topLine="47" />
+		</Cursor>
+	</File>
+	<File name="include/gu_util.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9725" topLine="137" />
+		</Cursor>
+	</File>
+	<File name="include/guwhiteboardtypelist_generated.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="181" />
+		</Cursor>
+	</File>
+	<File name="include/typeClassDefs/wb_sensors_epuck_proximity_control.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4652" topLine="83" />
+		</Cursor>
+	</File>
+	<File name="include/typeClassDefs/SENSORS_EPuckLight_Status.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="182" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include/typeClassDefs/wb_sensors_epuck_camera.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9422" topLine="223" />
+		</Cursor>
+	</File>
+	<File name="package.xml" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="398" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/gu_util.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3058" topLine="97" />
+		</Cursor>
+	</File>
+	<File name="include/guwhiteboardposter.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5229" topLine="95" />
+		</Cursor>
+	</File>
+	<File name="include/typeClassDefs/wb_emitters_epuck_led.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5908" topLine="151" />
+		</Cursor>
+	</File>
+	<File name="src/gugenericwhiteboardobject.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="688" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include/guwhiteboardwatcher.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2115" topLine="37" />
+		</Cursor>
+	</File>
+	<File name="include/typeClassDefs/wb_sensors_epuck_gsm_status.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6205" topLine="152" />
+		</Cursor>
+	</File>
+	<File name="include/guwhiteboardposter.cpp" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="8" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="22360" topLine="734" />
+		</Cursor>
+	</File>
+	<File name="include/typeClassDefs/wb_sensors_epuck_light_status.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4224" topLine="50" />
+		</Cursor>
+	</File>
+	<File name="include/guwhiteboardgetter.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="16" />
+		</Cursor>
+	</File>
+	<File name="include/gugenericwhiteboardobject.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3511" topLine="96" />
+		</Cursor>
+	</File>
+	<File name="include/gusimplewhiteboard.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="10661" topLine="198" />
+		</Cursor>
+	</File>
+	<File name="link_EPuck_wb_classes_into_project.sh" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1123" topLine="3" />
+		</Cursor>
+	</File>
+	<File name="include/typeClassDefs/wb_sensors_epuck_gsm_control.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="8702" topLine="228" />
+		</Cursor>
+	</File>
+	<File name="include/typeClassDefs/DifferentialRobotControlStatus.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="742" topLine="14" />
+		</Cursor>
+	</File>
+	<File name="include/typeClassDefs/SENSORS_EPuckProximity_Status.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="376" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include/guwhiteboardtypelist_c_generated.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4071" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/gusimplewhiteboard.c" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9474" topLine="256" />
+		</Cursor>
+	</File>
+	<File name="include/WBFunctor.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2128" topLine="47" />
+		</Cursor>
+	</File>
+	<File name="include/typeClassDefs/EPuck_Messages.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="731" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include/guwhiteboardtypelist.tsl" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4082" topLine="1" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>

@@ -1,0 +1,156 @@
+#ifndef PARSER_H_INCLUDED
+#define PARSER_H_INCLUDED
+/**
+ *  file: planner.h
+ *
+ *  Planning module for the Idempotent Planning Protocol Demonstration
+ *  Interfaces with the Subsumption Architecture ensemble; epuck...ByGSM.machine
+ *
+ *  Created by Dimitri Joukoff on 17/7/2015.
+ *  Copyright (c) 2015 Dimitri Joukoff. All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ *
+ * 1. Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ *
+ * 2. Redistributions in binary form must reproduce the above
+ *    copyright notice, this list of conditions and the following
+ *    disclaimer in the documentation and/or other materials
+ *    provided with the distribution.
+ *
+ * 3. All advertising materials mentioning features or use of this
+ *    software must display the following acknowledgement:
+ *
+ *        This product includes software developed by Dimitri Joukoff.
+ *
+ * 4. Neither the name of the author nor the names of contributors
+ *    may be used to endorse or promote products derived from this
+ *    software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ * A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+ * OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+ * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ * PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * -----------------------------------------------------------------------
+ * This program is free software; you can redistribute it and/or
+ * modify it under the above terms or under the terms of the GNU
+ * General Public License as published by the Free Software Foundation;
+ * either version 2 of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, see http://www.gnu.org/licenses/
+ * or write to the Free Software Foundation, Inc., 51 Franklin Street,
+ * Fifth Floor, Boston, MA  02110-1301, USA.
+ *
+ */
+
+#include <iostream>
+#include <iterator>
+
+#include <strips_prob.hxx>
+#include <ff_to_aptk.hxx>
+#include <fluent.hxx>
+#include <action.hxx>
+#include <cond_eff.hxx>
+#include <strips_state.hxx>
+#include <fwd_search_prob.hxx>
+#include <aptk/string_conversions.hxx>
+
+#include "brfs_planner.h"
+#include "dasplanner.h"
+#include "bfs_hmax.h"
+
+#include "guwhiteboardtypelist_generated.h"
+#include "typeClassDefs/EPuck_Messages.h"
+
+const char PROPERTY_SEPARATOR = '|';
+
+guWhiteboard::GOAL_Status_t                       wbhGoal_Status;
+guWhiteboard::Plan_Domain_Filename_t              wbhDomain_Filename;
+guWhiteboard::Plan_Goal_List_t                    wbhGoal_List;
+guWhiteboard::Plan_Manager_Status_t               wbhManager_Status;
+guWhiteboard::Plan_Obstacle_List_t                wbhObstacle_List;
+guWhiteboard::Plan_Obstacles_Filename_t           wbhObstacles_Filename;
+guWhiteboard::Plan_Plan_Filename_t                wbhPlan_Filename;
+guWhiteboard::Plan_Planner_Settings_t             wbhPlanner_Settings;
+guWhiteboard::Plan_Planner_Status_t               wbhPlanner_Status;
+guWhiteboard::Plan_Problem_Filename_t             wbhProblem_Filename;
+
+guWhiteboard::GOAL_Status                         wbcGoal_Status;
+guWhiteboard::Plan_Filename                       wbcDomain_Filename;
+guWhiteboard::Plan_Filename                       wbcObstacles_Filename;
+guWhiteboard::Plan_Filename                       wbcPlan_Filename;
+guWhiteboard::Plan_Filename                       wbcProblem_Filename;
+guWhiteboard::Plan_Goal_List                      wbcGoal_List;
+guWhiteboard::Plan_Obstacle_List                  wbcObstacle_List;
+guWhiteboard::Plan_Planner_Settings               wbcPlanner_Settings;
+guWhiteboard::Plan_Control_Status                 wbcManager_Status;
+guWhiteboard::Plan_Control_Status                 wbcPlanner_Status;
+
+//uint16_t  ctrwbhDomain_Filename;
+//uint16_t  ctrwbhProblem_Filename;
+uint16_t  ctrPlan_Manager_Status;
+uint16_t  ctrPlan_Goal_List;
+uint16_t  ctrPlan_Obstacle_List;
+
+/** pathList
+  *
+  * This is the list of sub-goals generated by the planner.
+  * These are sent to the Plan Manager when requested.
+  *
+  */
+std::vector<guWhiteboard::GOAL_Control>           pathList;
+
+/** ObstacleList
+  *
+  * This is the list of obstacles reported by the Plan Manager.
+  * These are retrieved from the Plan Manager on request.
+  *
+  */
+std::vector<guWhiteboard::Plan_Obstacle>	obstacleList;
+
+
+
+STRIPS_Problem	prob;
+std::string     myDomain;
+std::string     myProblem;
+std::string     planFilename;
+
+
+/** Settings for use by seach engine
+  *
+  * refer to wb_plan_planner_settings.h for explanations.
+  */
+float       max_novelty;
+float       cost;
+float       bound;
+float       budget;
+uint8_t     heuristic;
+bool        anytime;
+bool        delayed;
+bool        greedy;
+std::string engine;
+
+
+bool planSent = false;
+bool validDomainFile = false;
+bool validProblemFile = false;
+uint32_t lastFirstGoal = 0;
+
+#endif // PARSER_H_INCLUDED

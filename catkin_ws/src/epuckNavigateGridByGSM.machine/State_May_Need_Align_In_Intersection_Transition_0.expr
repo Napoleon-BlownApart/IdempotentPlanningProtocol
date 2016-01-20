@@ -1,0 +1,1 @@
+gsLeftIntersectionTrigger>=SENSOR_TRIGGER_SIZE || gsRightIntersectionTrigger>=SENSOR_TRIGGER_SIZE

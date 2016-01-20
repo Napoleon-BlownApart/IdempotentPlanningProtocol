@@ -1,0 +1,1 @@
+wbcDifferentialRobot_Status.left_motor().odo()>encStateB4Maneuver.encoder[0]+INTERSECTION_ALIGN || wbcDifferentialRobot_Status.right_motor().odo()>encStateB4Maneuver.encoder[1]+INTERSECTION_ALIGN

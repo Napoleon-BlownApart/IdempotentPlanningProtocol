@@ -1,0 +1,1 @@
+(curPosition.x==wbcGoal_Control.goal().x()&&curPosition.y==wbcGoal_Control.goal().y())

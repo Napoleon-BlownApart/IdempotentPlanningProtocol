@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="clfsm" />
+		<Option pch_mode="2" />
+		<Option compiler="clang" />
+		<Option virtualFolders="catkin/;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/clfsm" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="clfsm" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Weverything" />
+		</Compiler>
+		<Unit filename="CMakeLists.txt">
+			<Option virtualFolder="catkin/" />
+		</Unit>
+		<Unit filename="cmake/FindLibDispatch.cmake">
+			<Option virtualFolder="catkin/" />
+		</Unit>
+		<Unit filename="include/CLAction.h" />
+		<Unit filename="include/CLActionAction.h" />
+		<Unit filename="include/CLMachine.h" />
+		<Unit filename="include/CLMacros.h" />
+		<Unit filename="include/CLState.h" />
+		<Unit filename="include/CLTransition.h" />
+		<Unit filename="include/CLTransitionExpression.h" />
+		<Unit filename="include/CLWhiteboard.h" />
+		<Unit filename="include/FSM.h" />
+		<Unit filename="include/FSMAction.h" />
+		<Unit filename="include/FSMActivity.h" />
+		<Unit filename="include/FSMAsynchronousSuspensibleMachine.h" />
+		<Unit filename="include/FSMExpression.h" />
+		<Unit filename="include/FSMFactory.h" />
+		<Unit filename="include/FSMState.h" />
+		<Unit filename="include/FSMSuspensibleMachine.h" />
+		<Unit filename="include/FSMTransition.h" />
+		<Unit filename="include/FSMWBContext.h" />
+		<Unit filename="include/FSMWBPredicate.h" />
+		<Unit filename="include/FSMWBQueryPredicate.h" />
+		<Unit filename="include/FSMWBSubMachine.h" />
+		<Unit filename="include/FSMachine.h" />
+		<Unit filename="include/FSMachineVector.h" />
+		<Unit filename="include/WBFunctor.h" />
+		<Unit filename="include/WBMsg.h" />
+		<Unit filename="include/clfsm_cc.h" />
+		<Unit filename="include/clfsm_cc_delegate.h" />
+		<Unit filename="include/clfsm_factory.h" />
+		<Unit filename="include/clfsm_machine.h" />
+		<Unit filename="include/clfsm_vector_factory.h" />
+		<Unit filename="include/clfsm_visitors.h" />
+		<Unit filename="include/clfsm_visitorsupport.h" />
+		<Unit filename="include/clfsm_wb_vector_factory.h" />
+		<Unit filename="include/gu_util.h" />
+		<Unit filename="include/stringConstants.h" />
+		<Unit filename="include/typeClassDefs/FSMControlStatus.h" />
+		<Unit filename="include/typeClassDefs/FSM_Control.h" />
+		<Unit filename="include/typeClassDefs/wb_fsm_control_status.h" />
+		<Unit filename="include/typeClassDefs/wb_fsm_state_status.h" />
+		<Unit filename="package.xml">
+			<Option virtualFolder="catkin/" />
+		</Unit>
+		<Unit filename="src/CLActionAction.cc" />
+		<Unit filename="src/CLTransitionExpression.cc" />
+		<Unit filename="src/FSMAction.cc" />
+		<Unit filename="src/FSMActivity.cc" />
+		<Unit filename="src/FSMAsynchronousSuspensibleMachine.cc" />
+		<Unit filename="src/FSMExpression.cc" />
+		<Unit filename="src/FSMFactory.cc" />
+		<Unit filename="src/FSMState.cc" />
+		<Unit filename="src/FSMSuspensibleMachine.cc" />
+		<Unit filename="src/FSMTransition.cc" />
+		<Unit filename="src/FSMachine.cc" />
+		<Unit filename="src/FSMachineVector.cc" />
+		<Unit filename="src/clfsm_cc.cc" />
+		<Unit filename="src/clfsm_factory.cc" />
+		<Unit filename="src/clfsm_machine.cc" />
+		<Unit filename="src/clfsm_main.cc" />
+		<Unit filename="src/clfsm_vector_factory.cc" />
+		<Unit filename="src/clfsm_visitors.cc" />
+		<Unit filename="src/clfsm_visitorsupport.cc" />
+		<Unit filename="src/clfsm_wb_vector_factory.cc" />
+		<Unit filename="src/gu_util.cpp" />
+		<Unit filename="src/stringConstants.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

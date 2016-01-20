@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="epuckChooseDirectionByGSM" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="2" />
+		<Option compiler="clang" />
+		<Option virtualFolders="catkin/;_machine/;" />
+		<MakeCommands>
+			<Build command="" />
+			<CompileFile command="" />
+			<Clean command="$catkin_ws/catkin_clean_script.sh" />
+			<DistClean command="$make -f $makefile distclean$target" />
+			<AskRebuildNeeded command="" />
+			<SilentBuild command=" &gt; $(CMD_NULL)" />
+		</MakeCommands>
+		<Build>
+			<Target title="catkin_DEBUG">
+				<Option output="epuckChooseDirectionByGSM" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="$catkin_ws/catkin_make_script.sh  catkin $catkin_ws $PROJECTDIR Debug" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$catkin_ws/catkin_make_script.sh  catkin $catkin_ws $PROJECTDIR Debug &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="catkin_RELEASE">
+				<Option output="epuckChooseDirectionByGSM" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+				<MakeCommands>
+					<Build command="$catkin_ws/catkin_make_script.sh  catkin $catkin_ws $PROJECTDIR Release" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$catkin_ws/catkin_make_script.sh  catkin $catkin_ws $PROJECTDIR Release &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="catkin_make_DEBUG">
+				<Option output="epuckChooseDirectionByGSM" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="$catkin_ws/catkin_make_script.sh  catkin_make $catkin_ws $PROJECTDIR Debug" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$catkin_ws/catkin_make_script.sh  catkin_make $catkin_ws $PROJECTDIR Debug &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="catkin_make_RELEASE">
+				<Option output="epuckChooseDirectionByGSM" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+				<MakeCommands>
+					<Build command="$catkin_ws/catkin_make_script.sh  catkin_make $catkin_ws $PROJECTDIR Release" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$catkin_ws/catkin_make_script.sh  catkin_make $catkin_ws $PROJECTDIR Release &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Environment>
+				<Variable name="catkin_exe" value="$workspacedir/devel/lib/$project_name" />
+				<Variable name="catkin_ws" value="$workspacedir" />
+			</Environment>
+		</Build>
+		<Compiler>
+			<Add option="-Weverything" />
+		</Compiler>
+		<ExtraCommands>
+			<Add before="cd $catkin_ws/src/gusimplewhiteboard/include/typeClassDefs &amp;&amp; ~/guwhiteboardtypegenerator" />
+			<Add after="cd $workspacedir &amp;&amp; ./make_machine_symlinks.sh" />
+		</ExtraCommands>
+		<Unit filename="CMakeLists.txt">
+			<Option virtualFolder="catkin/" />
+		</Unit>
+		<Unit filename="IncludePath">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="Layout.plist" />
+		<Unit filename="State_Check_If_Ready.h" />
+		<Unit filename="State_Check_If_Ready.mm" />
+		<Unit filename="State_Check_If_Ready_Includes.h" />
+		<Unit filename="State_Check_If_Ready_Internal.mm" />
+		<Unit filename="State_Check_If_Ready_OnEntry.mm" />
+		<Unit filename="State_Check_If_Ready_OnExit.mm" />
+		<Unit filename="State_Check_If_Ready_Transition_0.expr" />
+		<Unit filename="State_Check_If_Ready_Transition_1.expr" />
+		<Unit filename="State_Check_If_Ready_Transition_2.expr" />
+		<Unit filename="State_Check_If_Ready_VarRefs.mm" />
+		<Unit filename="State_Check_If_Ready_Variables.h" />
+		<Unit filename="State_ChooseDirection.h" />
+		<Unit filename="State_ChooseDirection.mm" />
+		<Unit filename="State_ChooseDirection_Includes.h" />
+		<Unit filename="State_ChooseDirection_Internal.mm" />
+		<Unit filename="State_ChooseDirection_OnEntry.mm" />
+		<Unit filename="State_ChooseDirection_OnExit.mm" />
+		<Unit filename="State_ChooseDirection_Transition_0.expr" />
+		<Unit filename="State_ChooseDirection_VarRefs.mm" />
+		<Unit filename="State_ChooseDirection_Variables.h" />
+		<Unit filename="State_Initial.h" />
+		<Unit filename="State_Initial.mm" />
+		<Unit filename="State_InitialPseudoState.h" />
+		<Unit filename="State_InitialPseudoState.mm" />
+		<Unit filename="State_InitialPseudoState_Includes.h" />
+		<Unit filename="State_InitialPseudoState_Internal.mm" />
+		<Unit filename="State_InitialPseudoState_OnEntry.mm" />
+		<Unit filename="State_InitialPseudoState_OnExit.mm" />
+		<Unit filename="State_InitialPseudoState_Transition_0.expr" />
+		<Unit filename="State_InitialPseudoState_VarRefs.mm" />
+		<Unit filename="State_InitialPseudoState_Variables.h" />
+		<Unit filename="State_Initial_Includes.h" />
+		<Unit filename="State_Initial_Internal.mm" />
+		<Unit filename="State_Initial_OnEntry.mm" />
+		<Unit filename="State_Initial_OnExit.mm" />
+		<Unit filename="State_Initial_Transition_0.expr" />
+		<Unit filename="State_Initial_VarRefs.mm" />
+		<Unit filename="State_Initial_Variables.h" />
+		<Unit filename="State_Not_Ready.h" />
+		<Unit filename="State_Not_Ready.mm" />
+		<Unit filename="State_Not_Ready_Includes.h" />
+		<Unit filename="State_Not_Ready_Internal.mm" />
+		<Unit filename="State_Not_Ready_OnEntry.mm" />
+		<Unit filename="State_Not_Ready_OnExit.mm" />
+		<Unit filename="State_Not_Ready_Transition_0.expr" />
+		<Unit filename="State_Not_Ready_VarRefs.mm" />
+		<Unit filename="State_Not_Ready_Variables.h" />
+		<Unit filename="State_SUSPENDED.h" />
+		<Unit filename="State_SUSPENDED.mm" />
+		<Unit filename="State_SUSPENDED_Includes.h" />
+		<Unit filename="State_SUSPENDED_Internal.mm" />
+		<Unit filename="State_SUSPENDED_OnEntry.mm" />
+		<Unit filename="State_SUSPENDED_OnExit.mm" />
+		<Unit filename="State_SUSPENDED_VarRefs.mm" />
+		<Unit filename="State_SUSPENDED_Variables.h" />
+		<Unit filename="State_Stop.h" />
+		<Unit filename="State_Stop.mm" />
+		<Unit filename="State_Stop_Includes.h" />
+		<Unit filename="State_Stop_Internal.mm" />
+		<Unit filename="State_Stop_OnEntry.mm" />
+		<Unit filename="State_Stop_OnExit.mm" />
+		<Unit filename="State_Stop_VarRefs.mm" />
+		<Unit filename="State_Stop_Variables.h" />
+		<Unit filename="States">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="WindowLayout.plist" />
+		<Unit filename="epuckChooseDirectionByGSM.h">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="epuckChooseDirectionByGSM.layout" />
+		<Unit filename="epuckChooseDirectionByGSM.mm">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="epuckChooseDirectionByGSM_Includes.h">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="epuckChooseDirectionByGSM_VarRefs.mm">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="epuckChooseDirectionByGSM_Variables.h">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="package.xml">
+			<Option virtualFolder="catkin/" />
+		</Unit>
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

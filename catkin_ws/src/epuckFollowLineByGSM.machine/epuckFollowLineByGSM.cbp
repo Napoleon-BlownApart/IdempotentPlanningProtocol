@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="epuckFollowLineByGSM" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="2" />
+		<Option compiler="clang" />
+		<Option virtualFolders="catkin/;_machine/;" />
+		<MakeCommands>
+			<Build command="" />
+			<CompileFile command="" />
+			<Clean command="$catkin_ws/catkin_clean_script.sh" />
+			<DistClean command="$make -f $makefile distclean$target" />
+			<AskRebuildNeeded command="" />
+			<SilentBuild command=" &gt; $(CMD_NULL)" />
+		</MakeCommands>
+		<Build>
+			<Target title="catkin_DEBUG">
+				<Option output="bin/Debug/epuckFollowLineByGSM" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="$catkin_ws/catkin_make_script.sh  catkin $catkin_ws $PROJECTDIR Debug" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$catkin_ws/catkin_make_script.sh  catkin $catkin_ws $PROJECTDIR Debug &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="catkin_RELEASE">
+				<Option output="epuckFollowLineByGSM" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+				<MakeCommands>
+					<Build command="$catkin_ws/catkin_make_script.sh  catkin $catkin_ws $PROJECTDIR Release" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$catkin_ws/catkin_make_script.sh  catkin $catkin_ws $PROJECTDIR Release &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="catkin_make_DEBUG">
+				<Option output="bin/Debug/epuckFollowLineByGSM" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="$catkin_ws/catkin_make_script.sh  catkin_make $catkin_ws $PROJECTDIR Debug" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$catkin_ws/catkin_make_script.sh  catkin_make $catkin_ws $PROJECTDIR Debug &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="catkin_make_RELEASE">
+				<Option output="epuckFollowLineByGSM" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+				<MakeCommands>
+					<Build command="$catkin_ws/catkin_make_script.sh  catkin_make $catkin_ws $PROJECTDIR Release" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$catkin_ws/catkin_make_script.sh  catkin_make $catkin_ws $PROJECTDIR Release &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Environment>
+				<Variable name="catkin_exe" value="$workspacedir/devel/lib/$project_name" />
+				<Variable name="catkin_ws" value="$workspacedir" />
+			</Environment>
+		</Build>
+		<Compiler>
+			<Add option="-Weverything" />
+		</Compiler>
+		<ExtraCommands>
+			<Add before="cd $catkin_ws/src/gusimplewhiteboard/include/typeClassDefs &amp;&amp; ~/guwhiteboardtypegenerator" />
+			<Add after="cd $workspacedir &amp;&amp; ./make_machine_symlinks.sh" />
+		</ExtraCommands>
+		<Unit filename="CMakeLists.txt">
+			<Option virtualFolder="catkin/" />
+		</Unit>
+		<Unit filename="IncludePath">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="Layout.plist" />
+		<Unit filename="State_Continue_Forward.h" />
+		<Unit filename="State_Continue_Forward.mm" />
+		<Unit filename="State_Continue_Forward_Includes.h" />
+		<Unit filename="State_Continue_Forward_Internal.mm" />
+		<Unit filename="State_Continue_Forward_OnEntry.mm" />
+		<Unit filename="State_Continue_Forward_OnExit.mm" />
+		<Unit filename="State_Continue_Forward_Transition_0.expr" />
+		<Unit filename="State_Continue_Forward_VarRefs.mm" />
+		<Unit filename="State_Continue_Forward_Variables.h" />
+		<Unit filename="State_Forward.h" />
+		<Unit filename="State_Forward.mm" />
+		<Unit filename="State_Forward_Feedback.h" />
+		<Unit filename="State_Forward_Feedback.mm" />
+		<Unit filename="State_Forward_Feedback_Includes.h" />
+		<Unit filename="State_Forward_Feedback_Internal.mm" />
+		<Unit filename="State_Forward_Feedback_OnEntry.mm" />
+		<Unit filename="State_Forward_Feedback_OnExit.mm" />
+		<Unit filename="State_Forward_Feedback_Transition_0.expr" />
+		<Unit filename="State_Forward_Feedback_VarRefs.mm" />
+		<Unit filename="State_Forward_Feedback_Variables.h" />
+		<Unit filename="State_Forward_Includes.h" />
+		<Unit filename="State_Forward_Internal.mm" />
+		<Unit filename="State_Forward_OnEntry.mm" />
+		<Unit filename="State_Forward_OnExit.mm" />
+		<Unit filename="State_Forward_Transition_0.expr" />
+		<Unit filename="State_Forward_Transition_1.expr" />
+		<Unit filename="State_Forward_Transition_2.expr" />
+		<Unit filename="State_Forward_VarRefs.mm" />
+		<Unit filename="State_Forward_Variables.h" />
+		<Unit filename="State_Initial.h" />
+		<Unit filename="State_Initial.mm" />
+		<Unit filename="State_InitialPseudoState.h" />
+		<Unit filename="State_InitialPseudoState.mm" />
+		<Unit filename="State_InitialPseudoState_Includes.h" />
+		<Unit filename="State_InitialPseudoState_Internal.mm" />
+		<Unit filename="State_InitialPseudoState_OnEntry.mm" />
+		<Unit filename="State_InitialPseudoState_OnExit.mm" />
+		<Unit filename="State_InitialPseudoState_Transition_0.expr" />
+		<Unit filename="State_InitialPseudoState_VarRefs.mm" />
+		<Unit filename="State_InitialPseudoState_Variables.h" />
+		<Unit filename="State_Initial_Includes.h" />
+		<Unit filename="State_Initial_Internal.mm" />
+		<Unit filename="State_Initial_OnEntry.mm" />
+		<Unit filename="State_Initial_OnExit.mm" />
+		<Unit filename="State_Initial_Transition_0.expr" />
+		<Unit filename="State_Initial_VarRefs.mm" />
+		<Unit filename="State_Initial_Variables.h" />
+		<Unit filename="State_SUSPENDED.h" />
+		<Unit filename="State_SUSPENDED.mm" />
+		<Unit filename="State_SUSPENDED_Includes.h" />
+		<Unit filename="State_SUSPENDED_Internal.mm" />
+		<Unit filename="State_SUSPENDED_OnEntry.mm" />
+		<Unit filename="State_SUSPENDED_OnExit.mm" />
+		<Unit filename="State_SUSPENDED_VarRefs.mm" />
+		<Unit filename="State_SUSPENDED_Variables.h" />
+		<Unit filename="State_VeeringLeft.h" />
+		<Unit filename="State_VeeringLeft.mm" />
+		<Unit filename="State_VeeringLeft_Includes.h" />
+		<Unit filename="State_VeeringLeft_Internal.mm" />
+		<Unit filename="State_VeeringLeft_OnEntry.mm" />
+		<Unit filename="State_VeeringLeft_OnExit.mm" />
+		<Unit filename="State_VeeringLeft_Transition_0.expr" />
+		<Unit filename="State_VeeringLeft_Transition_1.expr" />
+		<Unit filename="State_VeeringLeft_VarRefs.mm" />
+		<Unit filename="State_VeeringLeft_Variables.h" />
+		<Unit filename="State_VeeringRight.h" />
+		<Unit filename="State_VeeringRight.mm" />
+		<Unit filename="State_VeeringRight_Includes.h" />
+		<Unit filename="State_VeeringRight_Internal.mm" />
+		<Unit filename="State_VeeringRight_OnEntry.mm" />
+		<Unit filename="State_VeeringRight_OnExit.mm" />
+		<Unit filename="State_VeeringRight_Transition_0.expr" />
+		<Unit filename="State_VeeringRight_Transition_1.expr" />
+		<Unit filename="State_VeeringRight_VarRefs.mm" />
+		<Unit filename="State_VeeringRight_Variables.h" />
+		<Unit filename="States">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="WindowLayout.plist" />
+		<Unit filename="epuckFollowLineByGSM.h">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="epuckFollowLineByGSM.mm">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="epuckFollowLineByGSM_Includes.h">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="epuckFollowLineByGSM_VarRefs.mm">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="epuckFollowLineByGSM_Variables.h">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="package.xml">
+			<Option virtualFolder="catkin/" />
+		</Unit>
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

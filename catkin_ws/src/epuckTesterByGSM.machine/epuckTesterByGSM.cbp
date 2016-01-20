@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="epuckTesterByGSM" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="2" />
+		<Option compiler="clang" />
+		<Option virtualFolders="_machine/;catkin/;" />
+		<MakeCommands>
+			<Build command="" />
+			<CompileFile command="" />
+			<Clean command="$catkin_ws/catkin_clean_script.sh" />
+			<DistClean command="$make -f $makefile distclean$target" />
+			<AskRebuildNeeded command="" />
+			<SilentBuild command=" &gt; $(CMD_NULL)" />
+		</MakeCommands>
+		<Build>
+			<Target title="catkin_DEBUG">
+				<Option output="epuckTesterByGSM" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="$catkin_ws/catkin_make_script.sh  catkin $catkin_ws $PROJECTDIR Debug" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$catkin_ws/catkin_make_script.sh  catkin $catkin_ws $PROJECTDIR Debug &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="catkin_RELEASE">
+				<Option output="epuckTesterByGSM" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+				<MakeCommands>
+					<Build command="$catkin_ws/catkin_make_script.sh  catkin $catkin_ws $PROJECTDIR Release" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$catkin_ws/catkin_make_script.sh  catkin $catkin_ws $PROJECTDIR Release &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="catkin_make_DEBUG">
+				<Option output="epuckTesterByGSM" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="$catkin_ws/catkin_make_script.sh  catkin_make $catkin_ws $PROJECTDIR Debug" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$catkin_ws/catkin_make_script.sh  catkin_make $catkin_ws $PROJECTDIR Debug &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="catkin_make_RELEASE">
+				<Option output="epuckTesterByGSM" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+				<MakeCommands>
+					<Build command="$catkin_ws/catkin_make_script.sh  catkin_make $catkin_ws $PROJECTDIR Release" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$catkin_ws/catkin_make_script.sh  catkin_make $catkin_ws $PROJECTDIR Release &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Environment>
+				<Variable name="catkin_exe" value="$workspacedir/devel/lib/$project_name" />
+				<Variable name="catkin_ws" value="$workspacedir" />
+			</Environment>
+		</Build>
+		<Compiler>
+			<Add option="-Weverything" />
+		</Compiler>
+		<ExtraCommands>
+			<Add before="cd $catkin_ws/src/gusimplewhiteboard/include/typeClassDefs &amp;&amp; ~/guwhiteboardtypegenerator" />
+			<Add after="cd $workspacedir &amp;&amp; ./make_machine_symlinks.sh" />
+		</ExtraCommands>
+		<Unit filename="CMakeLists.txt">
+			<Option virtualFolder="catkin/" />
+		</Unit>
+		<Unit filename="IncludePath">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="Layout.plist" />
+		<Unit filename="State_Initial.h" />
+		<Unit filename="State_Initial.mm" />
+		<Unit filename="State_InitialPseudoState.h" />
+		<Unit filename="State_InitialPseudoState.mm" />
+		<Unit filename="State_InitialPseudoState_Includes.h" />
+		<Unit filename="State_InitialPseudoState_Internal.mm" />
+		<Unit filename="State_InitialPseudoState_OnEntry.mm" />
+		<Unit filename="State_InitialPseudoState_OnExit.mm" />
+		<Unit filename="State_InitialPseudoState_Transition_0.expr" />
+		<Unit filename="State_InitialPseudoState_VarRefs.mm" />
+		<Unit filename="State_InitialPseudoState_Variables.h" />
+		<Unit filename="State_Initial_Includes.h" />
+		<Unit filename="State_Initial_Internal.mm" />
+		<Unit filename="State_Initial_OnEntry.mm" />
+		<Unit filename="State_Initial_OnExit.mm" />
+		<Unit filename="State_Initial_Transition_0.expr" />
+		<Unit filename="State_Initial_VarRefs.mm" />
+		<Unit filename="State_Initial_Variables.h" />
+		<Unit filename="State_epuckChooseDirection.h" />
+		<Unit filename="State_epuckChooseDirection.mm" />
+		<Unit filename="State_epuckChooseDirection_Includes.h" />
+		<Unit filename="State_epuckChooseDirection_Internal.mm" />
+		<Unit filename="State_epuckChooseDirection_OnEntry.mm" />
+		<Unit filename="State_epuckChooseDirection_OnExit.mm" />
+		<Unit filename="State_epuckChooseDirection_Resume.h" />
+		<Unit filename="State_epuckChooseDirection_Resume.mm" />
+		<Unit filename="State_epuckChooseDirection_Resume_Includes.h" />
+		<Unit filename="State_epuckChooseDirection_Resume_Internal.mm" />
+		<Unit filename="State_epuckChooseDirection_Resume_OnEntry.mm" />
+		<Unit filename="State_epuckChooseDirection_Resume_OnExit.mm" />
+		<Unit filename="State_epuckChooseDirection_Resume_Transition_0.expr" />
+		<Unit filename="State_epuckChooseDirection_Resume_VarRefs.mm" />
+		<Unit filename="State_epuckChooseDirection_Resume_Variables.h" />
+		<Unit filename="State_epuckChooseDirection_Suspend.h" />
+		<Unit filename="State_epuckChooseDirection_Suspend.mm" />
+		<Unit filename="State_epuckChooseDirection_Suspend_Includes.h" />
+		<Unit filename="State_epuckChooseDirection_Suspend_Internal.mm" />
+		<Unit filename="State_epuckChooseDirection_Suspend_OnEntry.mm" />
+		<Unit filename="State_epuckChooseDirection_Suspend_OnExit.mm" />
+		<Unit filename="State_epuckChooseDirection_Suspend_Transition_0.expr" />
+		<Unit filename="State_epuckChooseDirection_Suspend_VarRefs.mm" />
+		<Unit filename="State_epuckChooseDirection_Suspend_Variables.h" />
+		<Unit filename="State_epuckChooseDirection_Transition_0.expr" />
+		<Unit filename="State_epuckChooseDirection_Transition_1.expr" />
+		<Unit filename="State_epuckChooseDirection_Transition_2.expr" />
+		<Unit filename="State_epuckChooseDirection_VarRefs.mm" />
+		<Unit filename="State_epuckChooseDirection_Variables.h" />
+		<Unit filename="State_epuckCoordinates.h" />
+		<Unit filename="State_epuckCoordinates.mm" />
+		<Unit filename="State_epuckCoordinates_Includes.h" />
+		<Unit filename="State_epuckCoordinates_Internal.mm" />
+		<Unit filename="State_epuckCoordinates_OnEntry.mm" />
+		<Unit filename="State_epuckCoordinates_OnExit.mm" />
+		<Unit filename="State_epuckCoordinates_Resume.h" />
+		<Unit filename="State_epuckCoordinates_Resume.mm" />
+		<Unit filename="State_epuckCoordinates_Resume_Includes.h" />
+		<Unit filename="State_epuckCoordinates_Resume_Internal.mm" />
+		<Unit filename="State_epuckCoordinates_Resume_OnEntry.mm" />
+		<Unit filename="State_epuckCoordinates_Resume_OnExit.mm" />
+		<Unit filename="State_epuckCoordinates_Resume_Transition_0.expr" />
+		<Unit filename="State_epuckCoordinates_Resume_VarRefs.mm" />
+		<Unit filename="State_epuckCoordinates_Resume_Variables.h" />
+		<Unit filename="State_epuckCoordinates_Suspend.h" />
+		<Unit filename="State_epuckCoordinates_Suspend.mm" />
+		<Unit filename="State_epuckCoordinates_Suspend_Includes.h" />
+		<Unit filename="State_epuckCoordinates_Suspend_Internal.mm" />
+		<Unit filename="State_epuckCoordinates_Suspend_OnEntry.mm" />
+		<Unit filename="State_epuckCoordinates_Suspend_OnExit.mm" />
+		<Unit filename="State_epuckCoordinates_Suspend_Transition_0.expr" />
+		<Unit filename="State_epuckCoordinates_Suspend_VarRefs.mm" />
+		<Unit filename="State_epuckCoordinates_Suspend_Variables.h" />
+		<Unit filename="State_epuckCoordinates_Transition_0.expr" />
+		<Unit filename="State_epuckCoordinates_Transition_1.expr" />
+		<Unit filename="State_epuckCoordinates_Transition_2.expr" />
+		<Unit filename="State_epuckCoordinates_VarRefs.mm" />
+		<Unit filename="State_epuckCoordinates_Variables.h" />
+		<Unit filename="State_epuckCourseLeg.h" />
+		<Unit filename="State_epuckCourseLeg.mm" />
+		<Unit filename="State_epuckCourseLeg_Includes.h" />
+		<Unit filename="State_epuckCourseLeg_Internal.mm" />
+		<Unit filename="State_epuckCourseLeg_OnEntry.mm" />
+		<Unit filename="State_epuckCourseLeg_OnExit.mm" />
+		<Unit filename="State_epuckCourseLeg_Resume.h" />
+		<Unit filename="State_epuckCourseLeg_Resume.mm" />
+		<Unit filename="State_epuckCourseLeg_Resume_Includes.h" />
+		<Unit filename="State_epuckCourseLeg_Resume_Internal.mm" />
+		<Unit filename="State_epuckCourseLeg_Resume_OnEntry.mm" />
+		<Unit filename="State_epuckCourseLeg_Resume_OnExit.mm" />
+		<Unit filename="State_epuckCourseLeg_Resume_Transition_0.expr" />
+		<Unit filename="State_epuckCourseLeg_Resume_VarRefs.mm" />
+		<Unit filename="State_epuckCourseLeg_Resume_Variables.h" />
+		<Unit filename="State_epuckCourseLeg_Suspend.h" />
+		<Unit filename="State_epuckCourseLeg_Suspend.mm" />
+		<Unit filename="State_epuckCourseLeg_Suspend_Includes.h" />
+		<Unit filename="State_epuckCourseLeg_Suspend_Internal.mm" />
+		<Unit filename="State_epuckCourseLeg_Suspend_OnEntry.mm" />
+		<Unit filename="State_epuckCourseLeg_Suspend_OnExit.mm" />
+		<Unit filename="State_epuckCourseLeg_Suspend_Transition_0.expr" />
+		<Unit filename="State_epuckCourseLeg_Suspend_VarRefs.mm" />
+		<Unit filename="State_epuckCourseLeg_Suspend_Variables.h" />
+		<Unit filename="State_epuckCourseLeg_Transition_0.expr" />
+		<Unit filename="State_epuckCourseLeg_Transition_1.expr" />
+		<Unit filename="State_epuckCourseLeg_Transition_2.expr" />
+		<Unit filename="State_epuckCourseLeg_VarRefs.mm" />
+		<Unit filename="State_epuckCourseLeg_Variables.h" />
+		<Unit filename="State_epuckFollowsLine.h" />
+		<Unit filename="State_epuckFollowsLine.mm" />
+		<Unit filename="State_epuckFollowsLine_Includes.h" />
+		<Unit filename="State_epuckFollowsLine_Internal.mm" />
+		<Unit filename="State_epuckFollowsLine_OnEntry.mm" />
+		<Unit filename="State_epuckFollowsLine_OnExit.mm" />
+		<Unit filename="State_epuckFollowsLine_Resume.h" />
+		<Unit filename="State_epuckFollowsLine_Resume.mm" />
+		<Unit filename="State_epuckFollowsLine_Resume_Includes.h" />
+		<Unit filename="State_epuckFollowsLine_Resume_Internal.mm" />
+		<Unit filename="State_epuckFollowsLine_Resume_OnEntry.mm" />
+		<Unit filename="State_epuckFollowsLine_Resume_OnExit.mm" />
+		<Unit filename="State_epuckFollowsLine_Resume_Transition_0.expr" />
+		<Unit filename="State_epuckFollowsLine_Resume_VarRefs.mm" />
+		<Unit filename="State_epuckFollowsLine_Resume_Variables.h" />
+		<Unit filename="State_epuckFollowsLine_Suspend.h" />
+		<Unit filename="State_epuckFollowsLine_Suspend.mm" />
+		<Unit filename="State_epuckFollowsLine_Suspend_Includes.h" />
+		<Unit filename="State_epuckFollowsLine_Suspend_Internal.mm" />
+		<Unit filename="State_epuckFollowsLine_Suspend_OnEntry.mm" />
+		<Unit filename="State_epuckFollowsLine_Suspend_OnExit.mm" />
+		<Unit filename="State_epuckFollowsLine_Suspend_Transition_0.expr" />
+		<Unit filename="State_epuckFollowsLine_Suspend_VarRefs.mm" />
+		<Unit filename="State_epuckFollowsLine_Suspend_Variables.h" />
+		<Unit filename="State_epuckFollowsLine_Transition_0.expr" />
+		<Unit filename="State_epuckFollowsLine_Transition_1.expr" />
+		<Unit filename="State_epuckFollowsLine_Transition_2.expr" />
+		<Unit filename="State_epuckFollowsLine_VarRefs.mm" />
+		<Unit filename="State_epuckFollowsLine_Variables.h" />
+		<Unit filename="State_epuckIntersection.h" />
+		<Unit filename="State_epuckIntersection.mm" />
+		<Unit filename="State_epuckIntersection_Includes.h" />
+		<Unit filename="State_epuckIntersection_Internal.mm" />
+		<Unit filename="State_epuckIntersection_OnEntry.mm" />
+		<Unit filename="State_epuckIntersection_OnExit.mm" />
+		<Unit filename="State_epuckIntersection_Resume.h" />
+		<Unit filename="State_epuckIntersection_Resume.mm" />
+		<Unit filename="State_epuckIntersection_Resume_Includes.h" />
+		<Unit filename="State_epuckIntersection_Resume_Internal.mm" />
+		<Unit filename="State_epuckIntersection_Resume_OnEntry.mm" />
+		<Unit filename="State_epuckIntersection_Resume_OnExit.mm" />
+		<Unit filename="State_epuckIntersection_Resume_Transition_0.expr" />
+		<Unit filename="State_epuckIntersection_Resume_VarRefs.mm" />
+		<Unit filename="State_epuckIntersection_Resume_Variables.h" />
+		<Unit filename="State_epuckIntersection_Suspend.h" />
+		<Unit filename="State_epuckIntersection_Suspend.mm" />
+		<Unit filename="State_epuckIntersection_Suspend_Includes.h" />
+		<Unit filename="State_epuckIntersection_Suspend_Internal.mm" />
+		<Unit filename="State_epuckIntersection_Suspend_OnEntry.mm" />
+		<Unit filename="State_epuckIntersection_Suspend_OnExit.mm" />
+		<Unit filename="State_epuckIntersection_Suspend_Transition_0.expr" />
+		<Unit filename="State_epuckIntersection_Suspend_VarRefs.mm" />
+		<Unit filename="State_epuckIntersection_Suspend_Variables.h" />
+		<Unit filename="State_epuckIntersection_Transition_0.expr" />
+		<Unit filename="State_epuckIntersection_Transition_1.expr" />
+		<Unit filename="State_epuckIntersection_Transition_2.expr" />
+		<Unit filename="State_epuckIntersection_VarRefs.mm" />
+		<Unit filename="State_epuckIntersection_Variables.h" />
+		<Unit filename="State_epuckObstacleOnPath.h" />
+		<Unit filename="State_epuckObstacleOnPath.mm" />
+		<Unit filename="State_epuckObstacleOnPath_Includes.h" />
+		<Unit filename="State_epuckObstacleOnPath_Internal.mm" />
+		<Unit filename="State_epuckObstacleOnPath_OnEntry.mm" />
+		<Unit filename="State_epuckObstacleOnPath_OnExit.mm" />
+		<Unit filename="State_epuckObstacleOnPath_Resume.h" />
+		<Unit filename="State_epuckObstacleOnPath_Resume.mm" />
+		<Unit filename="State_epuckObstacleOnPath_Resume_Includes.h" />
+		<Unit filename="State_epuckObstacleOnPath_Resume_Internal.mm" />
+		<Unit filename="State_epuckObstacleOnPath_Resume_OnEntry.mm" />
+		<Unit filename="State_epuckObstacleOnPath_Resume_OnExit.mm" />
+		<Unit filename="State_epuckObstacleOnPath_Resume_Transition_0.expr" />
+		<Unit filename="State_epuckObstacleOnPath_Resume_VarRefs.mm" />
+		<Unit filename="State_epuckObstacleOnPath_Resume_Variables.h" />
+		<Unit filename="State_epuckObstacleOnPath_Suspend.h" />
+		<Unit filename="State_epuckObstacleOnPath_Suspend.mm" />
+		<Unit filename="State_epuckObstacleOnPath_Suspend_Includes.h" />
+		<Unit filename="State_epuckObstacleOnPath_Suspend_Internal.mm" />
+		<Unit filename="State_epuckObstacleOnPath_Suspend_OnEntry.mm" />
+		<Unit filename="State_epuckObstacleOnPath_Suspend_OnExit.mm" />
+		<Unit filename="State_epuckObstacleOnPath_Suspend_Transition_0.expr" />
+		<Unit filename="State_epuckObstacleOnPath_Suspend_VarRefs.mm" />
+		<Unit filename="State_epuckObstacleOnPath_Suspend_Variables.h" />
+		<Unit filename="State_epuckObstacleOnPath_Transition_0.expr" />
+		<Unit filename="State_epuckObstacleOnPath_Transition_1.expr" />
+		<Unit filename="State_epuckObstacleOnPath_Transition_2.expr" />
+		<Unit filename="State_epuckObstacleOnPath_VarRefs.mm" />
+		<Unit filename="State_epuckObstacleOnPath_Variables.h" />
+		<Unit filename="State_epuckOrientation.h" />
+		<Unit filename="State_epuckOrientation.mm" />
+		<Unit filename="State_epuckOrientation_Includes.h" />
+		<Unit filename="State_epuckOrientation_Internal.mm" />
+		<Unit filename="State_epuckOrientation_OnEntry.mm" />
+		<Unit filename="State_epuckOrientation_OnExit.mm" />
+		<Unit filename="State_epuckOrientation_Resume.h" />
+		<Unit filename="State_epuckOrientation_Resume.mm" />
+		<Unit filename="State_epuckOrientation_Resume_Includes.h" />
+		<Unit filename="State_epuckOrientation_Resume_Internal.mm" />
+		<Unit filename="State_epuckOrientation_Resume_OnEntry.mm" />
+		<Unit filename="State_epuckOrientation_Resume_OnExit.mm" />
+		<Unit filename="State_epuckOrientation_Resume_Transition_0.expr" />
+		<Unit filename="State_epuckOrientation_Resume_VarRefs.mm" />
+		<Unit filename="State_epuckOrientation_Resume_Variables.h" />
+		<Unit filename="State_epuckOrientation_Suspend.h" />
+		<Unit filename="State_epuckOrientation_Suspend.mm" />
+		<Unit filename="State_epuckOrientation_Suspend_Includes.h" />
+		<Unit filename="State_epuckOrientation_Suspend_Internal.mm" />
+		<Unit filename="State_epuckOrientation_Suspend_OnEntry.mm" />
+		<Unit filename="State_epuckOrientation_Suspend_OnExit.mm" />
+		<Unit filename="State_epuckOrientation_Suspend_Transition_0.expr" />
+		<Unit filename="State_epuckOrientation_Suspend_VarRefs.mm" />
+		<Unit filename="State_epuckOrientation_Suspend_Variables.h" />
+		<Unit filename="State_epuckOrientation_Transition_0.expr" />
+		<Unit filename="State_epuckOrientation_Transition_1.expr" />
+		<Unit filename="State_epuckOrientation_Transition_2.expr" />
+		<Unit filename="State_epuckOrientation_VarRefs.mm" />
+		<Unit filename="State_epuckOrientation_Variables.h" />
+		<Unit filename="State_epuckPlanManager.h" />
+		<Unit filename="State_epuckPlanManager.mm" />
+		<Unit filename="State_epuckPlanManager_Includes.h" />
+		<Unit filename="State_epuckPlanManager_Internal.mm" />
+		<Unit filename="State_epuckPlanManager_OnEntry.mm" />
+		<Unit filename="State_epuckPlanManager_OnExit.mm" />
+		<Unit filename="State_epuckPlanManager_Resume.h" />
+		<Unit filename="State_epuckPlanManager_Resume.mm" />
+		<Unit filename="State_epuckPlanManager_Resume_Includes.h" />
+		<Unit filename="State_epuckPlanManager_Resume_Internal.mm" />
+		<Unit filename="State_epuckPlanManager_Resume_OnEntry.mm" />
+		<Unit filename="State_epuckPlanManager_Resume_OnExit.mm" />
+		<Unit filename="State_epuckPlanManager_Resume_Transition_0.expr" />
+		<Unit filename="State_epuckPlanManager_Resume_VarRefs.mm" />
+		<Unit filename="State_epuckPlanManager_Resume_Variables.h" />
+		<Unit filename="State_epuckPlanManager_Suspend.h" />
+		<Unit filename="State_epuckPlanManager_Suspend.mm" />
+		<Unit filename="State_epuckPlanManager_Suspend_Includes.h" />
+		<Unit filename="State_epuckPlanManager_Suspend_Internal.mm" />
+		<Unit filename="State_epuckPlanManager_Suspend_OnEntry.mm" />
+		<Unit filename="State_epuckPlanManager_Suspend_OnExit.mm" />
+		<Unit filename="State_epuckPlanManager_Suspend_Transition_0.expr" />
+		<Unit filename="State_epuckPlanManager_Suspend_VarRefs.mm" />
+		<Unit filename="State_epuckPlanManager_Suspend_Variables.h" />
+		<Unit filename="State_epuckPlanManager_Transition_0.expr" />
+		<Unit filename="State_epuckPlanManager_Transition_1.expr" />
+		<Unit filename="State_epuckPlanManager_Transition_2.expr" />
+		<Unit filename="State_epuckPlanManager_VarRefs.mm" />
+		<Unit filename="State_epuckPlanManager_Variables.h" />
+		<Unit filename="State_epuckTurn.h" />
+		<Unit filename="State_epuckTurn.mm" />
+		<Unit filename="State_epuckTurnAway.h" />
+		<Unit filename="State_epuckTurnAway.mm" />
+		<Unit filename="State_epuckTurnAway_Includes.h" />
+		<Unit filename="State_epuckTurnAway_Internal.mm" />
+		<Unit filename="State_epuckTurnAway_OnEntry.mm" />
+		<Unit filename="State_epuckTurnAway_OnExit.mm" />
+		<Unit filename="State_epuckTurnAway_Resume.h" />
+		<Unit filename="State_epuckTurnAway_Resume.mm" />
+		<Unit filename="State_epuckTurnAway_Resume_Includes.h" />
+		<Unit filename="State_epuckTurnAway_Resume_Internal.mm" />
+		<Unit filename="State_epuckTurnAway_Resume_OnEntry.mm" />
+		<Unit filename="State_epuckTurnAway_Resume_OnExit.mm" />
+		<Unit filename="State_epuckTurnAway_Resume_Transition_0.expr" />
+		<Unit filename="State_epuckTurnAway_Resume_VarRefs.mm" />
+		<Unit filename="State_epuckTurnAway_Resume_Variables.h" />
+		<Unit filename="State_epuckTurnAway_Suspend.h" />
+		<Unit filename="State_epuckTurnAway_Suspend.mm" />
+		<Unit filename="State_epuckTurnAway_Suspend_Includes.h" />
+		<Unit filename="State_epuckTurnAway_Suspend_Internal.mm" />
+		<Unit filename="State_epuckTurnAway_Suspend_OnEntry.mm" />
+		<Unit filename="State_epuckTurnAway_Suspend_OnExit.mm" />
+		<Unit filename="State_epuckTurnAway_Suspend_Transition_0.expr" />
+		<Unit filename="State_epuckTurnAway_Suspend_VarRefs.mm" />
+		<Unit filename="State_epuckTurnAway_Suspend_Variables.h" />
+		<Unit filename="State_epuckTurnAway_Transition_0.expr" />
+		<Unit filename="State_epuckTurnAway_Transition_1.expr" />
+		<Unit filename="State_epuckTurnAway_Transition_2.expr" />
+		<Unit filename="State_epuckTurnAway_VarRefs.mm" />
+		<Unit filename="State_epuckTurnAway_Variables.h" />
+		<Unit filename="State_epuckTurn_Includes.h" />
+		<Unit filename="State_epuckTurn_Internal.mm" />
+		<Unit filename="State_epuckTurn_OnEntry.mm" />
+		<Unit filename="State_epuckTurn_OnExit.mm" />
+		<Unit filename="State_epuckTurn_Resume.h" />
+		<Unit filename="State_epuckTurn_Resume.mm" />
+		<Unit filename="State_epuckTurn_Resume_Includes.h" />
+		<Unit filename="State_epuckTurn_Resume_Internal.mm" />
+		<Unit filename="State_epuckTurn_Resume_OnEntry.mm" />
+		<Unit filename="State_epuckTurn_Resume_OnExit.mm" />
+		<Unit filename="State_epuckTurn_Resume_Transition_0.expr" />
+		<Unit filename="State_epuckTurn_Resume_VarRefs.mm" />
+		<Unit filename="State_epuckTurn_Resume_Variables.h" />
+		<Unit filename="State_epuckTurn_Suspend.h" />
+		<Unit filename="State_epuckTurn_Suspend.mm" />
+		<Unit filename="State_epuckTurn_Suspend_Includes.h" />
+		<Unit filename="State_epuckTurn_Suspend_Internal.mm" />
+		<Unit filename="State_epuckTurn_Suspend_OnEntry.mm" />
+		<Unit filename="State_epuckTurn_Suspend_OnExit.mm" />
+		<Unit filename="State_epuckTurn_Suspend_Transition_0.expr" />
+		<Unit filename="State_epuckTurn_Suspend_VarRefs.mm" />
+		<Unit filename="State_epuckTurn_Suspend_Variables.h" />
+		<Unit filename="State_epuckTurn_Transition_0.expr" />
+		<Unit filename="State_epuckTurn_Transition_1.expr" />
+		<Unit filename="State_epuckTurn_Transition_2.expr" />
+		<Unit filename="State_epuckTurn_VarRefs.mm" />
+		<Unit filename="State_epuckTurn_Variables.h" />
+		<Unit filename="State_loop_Back.h" />
+		<Unit filename="State_loop_Back.mm" />
+		<Unit filename="State_loop_Back_Includes.h" />
+		<Unit filename="State_loop_Back_Internal.mm" />
+		<Unit filename="State_loop_Back_OnEntry.mm" />
+		<Unit filename="State_loop_Back_OnExit.mm" />
+		<Unit filename="State_loop_Back_Transition_0.expr" />
+		<Unit filename="State_loop_Back_VarRefs.mm" />
+		<Unit filename="State_loop_Back_Variables.h" />
+		<Unit filename="State_observe.h" />
+		<Unit filename="State_observe.mm" />
+		<Unit filename="State_observe_Includes.h" />
+		<Unit filename="State_observe_Internal.mm" />
+		<Unit filename="State_observe_OnEntry.mm" />
+		<Unit filename="State_observe_OnExit.mm" />
+		<Unit filename="State_observe_Transition_0.expr" />
+		<Unit filename="State_observe_VarRefs.mm" />
+		<Unit filename="State_observe_Variables.h" />
+		<Unit filename="States">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="WindowLayout.plist" />
+		<Unit filename="epuckTesterByGSM.h">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="epuckTesterByGSM.mm">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="epuckTesterByGSM_Includes.h">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="epuckTesterByGSM_VarRefs.mm">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="epuckTesterByGSM_Variables.h">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="package.xml">
+			<Option virtualFolder="catkin/" />
+		</Unit>
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,1 @@
+(pathList.size()!=0) &&((atSubGoal||(planIsNew&&(!wbcObstacleOnPath.obstacle()))))

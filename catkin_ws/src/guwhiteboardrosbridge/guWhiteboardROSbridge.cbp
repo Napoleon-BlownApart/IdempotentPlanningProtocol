@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="guWhiteboardROSbridge" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="2" />
+		<Option compiler="clang" />
+		<Option virtualFolders="catkin/;ros/;ros/sources/;ros/headers/;include/;" />
+		<MakeCommands>
+			<Build command="" />
+			<CompileFile command="" />
+			<Clean command="$WORKSPACEDIR/catkin_clean_script.sh" />
+			<DistClean command="$make -f $makefile distclean$target" />
+			<AskRebuildNeeded command="" />
+			<SilentBuild command=" &gt; $(CMD_NULL)" />
+		</MakeCommands>
+		<Build>
+			<Target title="catkin_Debug">
+				<Option output="$catkin_exe/$project_name" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="$catkin_exe" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<MakeCommands>
+					<Build command="$WORKSPACEDIR/catkin_make_script.sh  catkin $WORKSPACEDIR $PROJECT_NAME Debug" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$WORKSPACEDIR/catkin_make_script.sh  catkin $WORKSPACEDIR $PROJECT_NAME Debug &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="catkin_Release">
+				<Option output="$catkin_exe/$project_name" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="$catkin_exe" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<MakeCommands>
+					<Build command="$WORKSPACEDIR/catkin_make_script.sh  catkin $WORKSPACEDIR $PROJECT_NAME Release" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$WORKSPACEDIR/catkin_make_script.sh  catkin $WORKSPACEDIR $PROJECT_NAME Release &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="catkin_make_Debug">
+				<Option output="$catkin_exe/$project_name" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="$catkin_exe" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<MakeCommands>
+					<Build command="$WORKSPACEDIR/catkin_make_script.sh  catkin_make $WORKSPACEDIR $PROJECT_NAME Debug" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$WORKSPACEDIR/catkin_make_script.sh  catkin_make $WORKSPACEDIR $PROJECT_NAME Debug &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="catkin_make_Release">
+				<Option output="$catkin_exe/$project_name" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="$catkin_exe" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<MakeCommands>
+					<Build command="$WORKSPACEDIR/catkin_make_script.sh  catkin_make $WORKSPACEDIR $PROJECT_NAME Release" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$WORKSPACEDIR/catkin_make_script.sh  catkin_make $WORKSPACEDIR $PROJECT_NAME Release &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Environment>
+				<Variable name="catkin_exe" value="$workspacedir/devel/lib/$project_name" />
+			</Environment>
+		</Build>
+		<Compiler>
+			<Add option="-Weverything" />
+		</Compiler>
+		<Unit filename="CMakeLists.txt">
+			<Option virtualFolder="catkin/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="include/SimpleShapes.h">
+			<Option virtualFolder="include/" />
+		</Unit>
+		<Unit filename="include/Trig.h">
+			<Option virtualFolder="include/" />
+		</Unit>
+		<Unit filename="include/gu_util.h">
+			<Option virtualFolder="include/" />
+		</Unit>
+		<Unit filename="include/guwhiteboardgetter.h">
+			<Option virtualFolder="include/" />
+		</Unit>
+		<Unit filename="include/guwhiteboardposter.h">
+			<Option virtualFolder="include/" />
+		</Unit>
+		<Unit filename="include/gwrbClass.h">
+			<Option virtualFolder="ros/headers/" />
+		</Unit>
+		<Unit filename="include/math_fnc.h">
+			<Option virtualFolder="include/" />
+		</Unit>
+		<Unit filename="include/rosCallback.h">
+			<Option virtualFolder="ros/headers/" />
+		</Unit>
+		<Unit filename="package.xml">
+			<Option virtualFolder="catkin/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="src/guwhiteboardrosbridge.cpp">
+			<Option virtualFolder="ros/sources/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="src/gwrbClass.cpp">
+			<Option virtualFolder="ros/sources/" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<lib_finder disable_auto="1" />
+			<debugger />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="" main="" init_handlers="necessary" language="CPP" />
+			</wxsmith>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

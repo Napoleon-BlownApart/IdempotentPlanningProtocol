@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Subsumption">
+		<Project filename="src/epuckFollowLineByGSM.machine/epuckFollowLineByGSM.cbp" />
+		<Project filename="src/epuckIntersectionByGSM.machine/epuckIntersectionByGSM.cbp" />
+		<Project filename="src/epuckChooseDirectionByGSM.machine/epuckChooseDirectionByGSM.cbp" />
+		<Project filename="src/epuckTurnByGSM.machine/epuckTurnByGSM.cbp" />
+		<Project filename="src/epuckTurnAwayByGSM.machine/epuckTurnAwayByGSM.cbp" />
+		<Project filename="src/epuckObstacleOnPathByGSM.machine/epuckObstacleOnPathByGSM.cbp" />
+		<Project filename="src/epuckOrientationByGSM.machine/epuckOrientationByGSM.cbp" />
+		<Project filename="src/epuckCoordinatesByGSM.machine/epuckCoordinatesByGSM.cbp" />
+		<Project filename="src/epuckCourseLegByGSM.machine/epuckCourseLegByGSM.cbp" />
+		<Project filename="src/epuckPlanManagerByGSM.machine/epuckPlanManagerByGSM.cbp" />
+		<Project filename="src/epuckTesterByGSM.machine/epuckTesterByGSM.cbp" />
+		<Project filename="src/gusimplewhiteboard/gusimplewhiteboard_Epuck.cbp" />
+		<Project filename="src/webots_epuck_whiteboard_controller/webots_epuck_whiteboard_controller.cbp" />
+		<Project filename="src/clfsm/clfsm.cbp" />
+		<Project filename="src/planner/planner.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

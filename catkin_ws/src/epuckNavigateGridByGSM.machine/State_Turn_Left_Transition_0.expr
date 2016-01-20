@@ -1,0 +1,1 @@
+(encStateB4Maneuver.encoder[0]-wbcDifferentialRobot_Status.left_motor().odo())>MIN_TURN

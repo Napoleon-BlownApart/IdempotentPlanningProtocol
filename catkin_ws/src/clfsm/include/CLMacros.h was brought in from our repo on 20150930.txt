@@ -1,0 +1,2 @@
+The old CLMacros.h did not contain a macro that is needed for the PingPongCLFSM machine.
+#define machine_id()    ((_m)->machineID())

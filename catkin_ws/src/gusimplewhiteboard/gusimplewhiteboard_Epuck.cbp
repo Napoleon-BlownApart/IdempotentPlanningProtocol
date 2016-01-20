@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="gusimplewhiteboard (EPuck)" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="2" />
+		<Option compiler="clang" />
+		<Option virtualFolders="include/typeClassDefs/;include/;include/Sources/;include/OTHER_Headers/;cmake/;catkin/;src/;include/EPuck/;admin/;" />
+		<MakeCommands>
+			<Build command="" />
+			<CompileFile command="" />
+			<Clean command="$catkin_ws/catkin_clean_script.sh" />
+			<DistClean command="$make -f $makefile distclean$target" />
+			<AskRebuildNeeded command="" />
+			<SilentBuild command=" &gt; $(CMD_NULL)" />
+		</MakeCommands>
+		<Build>
+			<Target title="catkin_DEBUG">
+				<Option output="$catkin_exe/$project_name" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="$catkin_exe" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="$catkin_ws/catkin_make_script.sh  catkin $catkin_ws $PROJECTDIR Debug" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$catkin_ws/catkin_make_script.sh  catkin $catkin_ws $PROJECTDIR Debug &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="catkin_RELEASE">
+				<Option output="$catkin_exe/$project_name" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="$catkin_exe" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+				<MakeCommands>
+					<Build command="$catkin_ws/catkin_make_script.sh  catkin $catkin_ws $PROJECTDIR Release" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$catkin_ws/catkin_make_script.sh  catkin $catkin_ws $PROJECTDIR Release &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="catkin_make_DEBUG">
+				<Option output="$catkin_exe/$project_name" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="$catkin_exe" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="$catkin_ws/catkin_make_script.sh  catkin_make $catkin_ws $PROJECTDIR Debug" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$catkin_ws/catkin_make_script.sh  catkin_make $catkin_ws $PROJECTDIR Debug &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="catkin_make_RELEASE">
+				<Option output="$catkin_exe/$project_name" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="$catkin_exe" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+				<MakeCommands>
+					<Build command="$catkin_ws/catkin_make_script.sh  catkin_make $catkin_ws $PROJECTDIR Release" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$catkin_ws/catkin_make_script.sh  catkin_make $catkin_ws $PROJECTDIR Release &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Environment>
+				<Variable name="catkin_exe" value="$workspacedir/devel/lib/$project_name" />
+				<Variable name="catkin_ws" value="$workspacedir" />
+			</Environment>
+		</Build>
+		<Compiler>
+			<Add option="-Weverything" />
+		</Compiler>
+		<ExtraCommands>
+			<Add before="cd $catkin_ws/src/gusimplewhiteboard/include/typeClassDefs &amp;&amp; ~/guwhiteboardtypegenerator" />
+		</ExtraCommands>
+		<Unit filename="CMakeLists.txt">
+			<Option virtualFolder="catkin/" />
+		</Unit>
+		<Unit filename="cmake/FindLibDispatch.cmake">
+			<Option virtualFolder="cmake/" />
+		</Unit>
+		<Unit filename="include/RemoteWhiteboard.h">
+			<Option virtualFolder="include/OTHER_Headers/" />
+		</Unit>
+		<Unit filename="include/WBFunctor.h">
+			<Option virtualFolder="include/OTHER_Headers/" />
+		</Unit>
+		<Unit filename="include/WBFunctor_types_generated.h">
+			<Option virtualFolder="include/OTHER_Headers/" />
+		</Unit>
+		<Unit filename="include/WBMsg.h">
+			<Option virtualFolder="include/OTHER_Headers/" />
+		</Unit>
+		<Unit filename="include/Whiteboard.h">
+			<Option virtualFolder="include/OTHER_Headers/" />
+		</Unit>
+		<Unit filename="include/WhiteboardConstants.h">
+			<Option virtualFolder="include/OTHER_Headers/" />
+		</Unit>
+		<Unit filename="include/gu_util.h">
+			<Option virtualFolder="include/OTHER_Headers/" />
+		</Unit>
+		<Unit filename="include/gugenericwhiteboardobject.h">
+			<Option virtualFolder="include/OTHER_Headers/" />
+		</Unit>
+		<Unit filename="include/gusimplewhiteboard.h">
+			<Option virtualFolder="include/OTHER_Headers/" />
+		</Unit>
+		<Unit filename="include/gutcpinjectionwhiteboardobject.h">
+			<Option virtualFolder="include/OTHER_Headers/" />
+		</Unit>
+		<Unit filename="include/guwhiteboardgetter.cpp">
+			<Option virtualFolder="include/Sources/" />
+		</Unit>
+		<Unit filename="include/guwhiteboardgetter.h">
+			<Option virtualFolder="include/OTHER_Headers/" />
+		</Unit>
+		<Unit filename="include/guwhiteboardposter.cpp">
+			<Option virtualFolder="include/Sources/" />
+		</Unit>
+		<Unit filename="include/guwhiteboardposter.h">
+			<Option virtualFolder="include/OTHER_Headers/" />
+		</Unit>
+		<Unit filename="include/guwhiteboardtypelist.tsl">
+			<Option virtualFolder="include/EPuck/" />
+		</Unit>
+		<Unit filename="include/guwhiteboardtypelist_c_generated.h">
+			<Option virtualFolder="include/OTHER_Headers/" />
+		</Unit>
+		<Unit filename="include/guwhiteboardtypelist_c_typestrings_generated.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="include/Sources/" />
+		</Unit>
+		<Unit filename="include/guwhiteboardtypelist_generated.h">
+			<Option virtualFolder="include/OTHER_Headers/" />
+		</Unit>
+		<Unit filename="include/guwhiteboardtypelist_tcp_generated.h">
+			<Option virtualFolder="include/OTHER_Headers/" />
+		</Unit>
+		<Unit filename="include/guwhiteboardwatcher.h">
+			<Option virtualFolder="include/OTHER_Headers/" />
+		</Unit>
+		<Unit filename="include/typeClassDefs/DifferentialRobotControlStatus.h">
+			<Option virtualFolder="include/typeClassDefs/" />
+		</Unit>
+		<Unit filename="include/typeClassDefs/EMITTERS_EpuckLED_ControlStatus.h">
+			<Option virtualFolder="include/typeClassDefs/" />
+		</Unit>
+		<Unit filename="include/typeClassDefs/EPuck_Messages.h">
+			<Option virtualFolder="include/EPuck/" />
+		</Unit>
+		<Unit filename="include/typeClassDefs/FSMControlStatus.h">
+			<Option virtualFolder="include/typeClassDefs/" />
+		</Unit>
+		<Unit filename="include/typeClassDefs/SENSORS_EPuckAccel_Control.h">
+			<Option virtualFolder="include/typeClassDefs/" />
+		</Unit>
+		<Unit filename="include/typeClassDefs/SENSORS_EPuckAccel_Status.h">
+			<Option virtualFolder="include/typeClassDefs/" />
+		</Unit>
+		<Unit filename="include/typeClassDefs/SENSORS_EPuckCamera_ControlStatus.h">
+			<Option virtualFolder="include/typeClassDefs/" />
+		</Unit>
+		<Unit filename="include/typeClassDefs/SENSORS_EPuckGSM_Control.h">
+			<Option virtualFolder="include/typeClassDefs/" />
+		</Unit>
+		<Unit filename="include/typeClassDefs/SENSORS_EPuckGSM_Status.h">
+			<Option virtualFolder="include/typeClassDefs/" />
+		</Unit>
+		<Unit filename="include/typeClassDefs/SENSORS_EPuckLight_Control.h">
+			<Option virtualFolder="include/typeClassDefs/" />
+		</Unit>
+		<Unit filename="include/typeClassDefs/SENSORS_EPuckLight_Status.h">
+			<Option virtualFolder="include/typeClassDefs/" />
+		</Unit>
+		<Unit filename="include/typeClassDefs/SENSORS_EPuckProximity_Control.h">
+			<Option virtualFolder="include/typeClassDefs/" />
+		</Unit>
+		<Unit filename="include/typeClassDefs/SENSORS_EPuckProximity_Status.h">
+			<Option virtualFolder="include/typeClassDefs/" />
+		</Unit>
+		<Unit filename="include/typeClassDefs/wb_differential_robot.h">
+			<Option virtualFolder="include/typeClassDefs/" />
+		</Unit>
+		<Unit filename="include/typeClassDefs/wb_emitters_epuck_led.h">
+			<Option virtualFolder="include/typeClassDefs/" />
+		</Unit>
+		<Unit filename="include/typeClassDefs/wb_fsm_control_status.h">
+			<Option virtualFolder="include/typeClassDefs/" />
+		</Unit>
+		<Unit filename="include/typeClassDefs/wb_fsm_state_status.h">
+			<Option virtualFolder="include/typeClassDefs/" />
+		</Unit>
+		<Unit filename="include/typeClassDefs/wb_generic_analog_emitter_controlstatus.h">
+			<Option virtualFolder="include/typeClassDefs/" />
+		</Unit>
+		<Unit filename="include/typeClassDefs/wb_generic_analog_sensor_control.h">
+			<Option virtualFolder="include/typeClassDefs/" />
+		</Unit>
+		<Unit filename="include/typeClassDefs/wb_generic_analog_sensor_status.h">
+			<Option virtualFolder="include/typeClassDefs/" />
+		</Unit>
+		<Unit filename="include/typeClassDefs/wb_kinematic_motor.h">
+			<Option virtualFolder="include/typeClassDefs/" />
+		</Unit>
+		<Unit filename="include/typeClassDefs/wb_sensors_epuck_accel_control.h">
+			<Option virtualFolder="include/typeClassDefs/" />
+		</Unit>
+		<Unit filename="include/typeClassDefs/wb_sensors_epuck_accel_status.h">
+			<Option virtualFolder="include/typeClassDefs/" />
+		</Unit>
+		<Unit filename="include/typeClassDefs/wb_sensors_epuck_camera.h">
+			<Option virtualFolder="include/typeClassDefs/" />
+		</Unit>
+		<Unit filename="include/typeClassDefs/wb_sensors_epuck_gsm_control.h">
+			<Option virtualFolder="include/typeClassDefs/" />
+		</Unit>
+		<Unit filename="include/typeClassDefs/wb_sensors_epuck_gsm_status.h">
+			<Option virtualFolder="include/typeClassDefs/" />
+		</Unit>
+		<Unit filename="include/typeClassDefs/wb_sensors_epuck_light_control.h">
+			<Option virtualFolder="include/typeClassDefs/" />
+		</Unit>
+		<Unit filename="include/typeClassDefs/wb_sensors_epuck_light_status.h">
+			<Option virtualFolder="include/typeClassDefs/" />
+		</Unit>
+		<Unit filename="include/typeClassDefs/wb_sensors_epuck_proximity_control.h">
+			<Option virtualFolder="include/typeClassDefs/" />
+		</Unit>
+		<Unit filename="include/typeClassDefs/wb_sensors_epuck_proximity_status.h">
+			<Option virtualFolder="include/typeClassDefs/" />
+		</Unit>
+		<Unit filename="include/typeClassDefsguwhiteboardgetter.cpp">
+			<Option virtualFolder="include/Sources/" />
+		</Unit>
+		<Unit filename="include/typeClassDefsguwhiteboardposter.cpp">
+			<Option virtualFolder="include/Sources/" />
+		</Unit>
+		<Unit filename="include/typeClassDefsguwhiteboardtypelist_c_typestrings_generated.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="include/Sources/" />
+		</Unit>
+		<Unit filename="link_EPuck_wb_classes_into_project.sh">
+			<Option virtualFolder="admin/" />
+		</Unit>
+		<Unit filename="package.xml">
+			<Option virtualFolder="catkin/" />
+		</Unit>
+		<Unit filename="src/gu_util.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/gugenericwhiteboardobject.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/gusimplewhiteboard.c">
+			<Option compilerVar="CC" />
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/gutcpinjectionwhiteboardobject.cpp">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="src/libgusimplewhiteboardmain.cc">
+			<Option virtualFolder="src/" />
+		</Unit>
+		<Unit filename="update_links.sh">
+			<Option virtualFolder="admin/" />
+		</Unit>
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

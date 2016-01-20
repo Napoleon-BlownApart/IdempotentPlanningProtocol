@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="epuckIntersectionByGSM" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="2" />
+		<Option compiler="clang" />
+		<Option virtualFolders="catkin/;_machine/;" />
+		<MakeCommands>
+			<Build command="" />
+			<CompileFile command="" />
+			<Clean command="$catkin_ws/catkin_clean_script.sh" />
+			<DistClean command="$make -f $makefile distclean$target" />
+			<AskRebuildNeeded command="" />
+			<SilentBuild command=" &gt; $(CMD_NULL)" />
+		</MakeCommands>
+		<Build>
+			<Target title="catkin_DEBUG">
+				<Option output="epuckIntersectionByGSM" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="$catkin_ws/catkin_make_script.sh  catkin $catkin_ws $PROJECTDIR Debug" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$catkin_ws/catkin_make_script.sh  catkin $catkin_ws $PROJECTDIR Debug &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="catkin_RELEASE">
+				<Option output="epuckIntersectionByGSM" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+				<MakeCommands>
+					<Build command="$catkin_ws/catkin_make_script.sh  catkin $catkin_ws $PROJECTDIR Release" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$catkin_ws/catkin_make_script.sh  catkin $catkin_ws $PROJECTDIR Release &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="catkin_make_DEBUG">
+				<Option output="epuckIntersectionByGSM" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="$catkin_ws/catkin_make_script.sh  catkin_make $catkin_ws $PROJECTDIR Debug" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$catkin_ws/catkin_make_script.sh  catkin_make $catkin_ws $PROJECTDIR Debug &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="catkin_make_RELEASE">
+				<Option output="epuckIntersectionByGSM" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+				<MakeCommands>
+					<Build command="$catkin_ws/catkin_make_script.sh  catkin_make $catkin_ws $PROJECTDIR Release" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$catkin_ws/catkin_make_script.sh  catkin_make $catkin_ws $PROJECTDIR Release &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Environment>
+				<Variable name="catkin__exe" value="$workspacedir/devel/lib/$project_name" />
+				<Variable name="catkin_ws" value="$workspacedir" />
+			</Environment>
+		</Build>
+		<Compiler>
+			<Add option="-Weverything" />
+		</Compiler>
+		<ExtraCommands>
+			<Add before="cd $catkin_ws/src/gusimplewhiteboard/include/typeClassDefs &amp;&amp; ~/guwhiteboardtypegenerator" />
+			<Add after="cd $workspacedir &amp;&amp; ./make_machine_symlinks.sh" />
+		</ExtraCommands>
+		<Unit filename="CMakeLists.txt">
+			<Option virtualFolder="catkin/" />
+		</Unit>
+		<Unit filename="IncludePath">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="Layout.plist" />
+		<Unit filename="State_Align_Beyond_Intersection.h" />
+		<Unit filename="State_Align_Beyond_Intersection.mm" />
+		<Unit filename="State_Align_Beyond_Intersection_Includes.h" />
+		<Unit filename="State_Align_Beyond_Intersection_Internal.mm" />
+		<Unit filename="State_Align_Beyond_Intersection_OnEntry.mm" />
+		<Unit filename="State_Align_Beyond_Intersection_OnExit.mm" />
+		<Unit filename="State_Align_Beyond_Intersection_Transition_0.expr" />
+		<Unit filename="State_Align_Beyond_Intersection_VarRefs.mm" />
+		<Unit filename="State_Align_Beyond_Intersection_Variables.h" />
+		<Unit filename="State_Align_In_Intersection.h" />
+		<Unit filename="State_Align_In_Intersection.mm" />
+		<Unit filename="State_Align_In_Intersection_Includes.h" />
+		<Unit filename="State_Align_In_Intersection_Internal.mm" />
+		<Unit filename="State_Align_In_Intersection_OnEntry.mm" />
+		<Unit filename="State_Align_In_Intersection_OnExit.mm" />
+		<Unit filename="State_Align_In_Intersection_Transition_0.expr" />
+		<Unit filename="State_Align_In_Intersection_VarRefs.mm" />
+		<Unit filename="State_Align_In_Intersection_Variables.h" />
+		<Unit filename="State_CentreGS_Detects_Intersection.h" />
+		<Unit filename="State_CentreGS_Detects_Intersection.mm" />
+		<Unit filename="State_CentreGS_Detects_Intersection_Includes.h" />
+		<Unit filename="State_CentreGS_Detects_Intersection_Internal.mm" />
+		<Unit filename="State_CentreGS_Detects_Intersection_OnEntry.mm" />
+		<Unit filename="State_CentreGS_Detects_Intersection_OnExit.mm" />
+		<Unit filename="State_CentreGS_Detects_Intersection_Transition_0.expr" />
+		<Unit filename="State_CentreGS_Detects_Intersection_VarRefs.mm" />
+		<Unit filename="State_CentreGS_Detects_Intersection_Variables.h" />
+		<Unit filename="State_CentreGS_Detects_Nothing.h" />
+		<Unit filename="State_CentreGS_Detects_Nothing.mm" />
+		<Unit filename="State_CentreGS_Detects_Nothing_Includes.h" />
+		<Unit filename="State_CentreGS_Detects_Nothing_Internal.mm" />
+		<Unit filename="State_CentreGS_Detects_Nothing_OnEntry.mm" />
+		<Unit filename="State_CentreGS_Detects_Nothing_OnExit.mm" />
+		<Unit filename="State_CentreGS_Detects_Nothing_Transition_0.expr" />
+		<Unit filename="State_CentreGS_Detects_Nothing_VarRefs.mm" />
+		<Unit filename="State_CentreGS_Detects_Nothing_Variables.h" />
+		<Unit filename="State_CentreGS_Detects_Path.h" />
+		<Unit filename="State_CentreGS_Detects_Path.mm" />
+		<Unit filename="State_CentreGS_Detects_Path_Includes.h" />
+		<Unit filename="State_CentreGS_Detects_Path_Internal.mm" />
+		<Unit filename="State_CentreGS_Detects_Path_OnEntry.mm" />
+		<Unit filename="State_CentreGS_Detects_Path_OnExit.mm" />
+		<Unit filename="State_CentreGS_Detects_Path_Transition_0.expr" />
+		<Unit filename="State_CentreGS_Detects_Path_VarRefs.mm" />
+		<Unit filename="State_CentreGS_Detects_Path_Variables.h" />
+		<Unit filename="State_Detected_Intersection.h" />
+		<Unit filename="State_Detected_Intersection.mm" />
+		<Unit filename="State_Detected_Intersection_Includes.h" />
+		<Unit filename="State_Detected_Intersection_Internal.mm" />
+		<Unit filename="State_Detected_Intersection_OnEntry.mm" />
+		<Unit filename="State_Detected_Intersection_OnExit.mm" />
+		<Unit filename="State_Detected_Intersection_Transition_0.expr" />
+		<Unit filename="State_Detected_Intersection_VarRefs.mm" />
+		<Unit filename="State_Detected_Intersection_Variables.h" />
+		<Unit filename="State_Determine_Direction_Left.h" />
+		<Unit filename="State_Determine_Direction_Left.mm" />
+		<Unit filename="State_Determine_Direction_Left_Includes.h" />
+		<Unit filename="State_Determine_Direction_Left_Internal.mm" />
+		<Unit filename="State_Determine_Direction_Left_OnEntry.mm" />
+		<Unit filename="State_Determine_Direction_Left_OnExit.mm" />
+		<Unit filename="State_Determine_Direction_Left_Transition_0.expr" />
+		<Unit filename="State_Determine_Direction_Left_Transition_1.expr" />
+		<Unit filename="State_Determine_Direction_Left_VarRefs.mm" />
+		<Unit filename="State_Determine_Direction_Left_Variables.h" />
+		<Unit filename="State_Determine_Direction_Right.h" />
+		<Unit filename="State_Determine_Direction_Right.mm" />
+		<Unit filename="State_Determine_Direction_Right_Includes.h" />
+		<Unit filename="State_Determine_Direction_Right_Internal.mm" />
+		<Unit filename="State_Determine_Direction_Right_OnEntry.mm" />
+		<Unit filename="State_Determine_Direction_Right_OnExit.mm" />
+		<Unit filename="State_Determine_Direction_Right_Transition_0.expr" />
+		<Unit filename="State_Determine_Direction_Right_Transition_1.expr" />
+		<Unit filename="State_Determine_Direction_Right_VarRefs.mm" />
+		<Unit filename="State_Determine_Direction_Right_Variables.h" />
+		<Unit filename="State_Determine_Direction_Straight.h" />
+		<Unit filename="State_Determine_Direction_Straight.mm" />
+		<Unit filename="State_Determine_Direction_Straight_Includes.h" />
+		<Unit filename="State_Determine_Direction_Straight_Internal.mm" />
+		<Unit filename="State_Determine_Direction_Straight_OnEntry.mm" />
+		<Unit filename="State_Determine_Direction_Straight_OnExit.mm" />
+		<Unit filename="State_Determine_Direction_Straight_Transition_0.expr" />
+		<Unit filename="State_Determine_Direction_Straight_Transition_1.expr" />
+		<Unit filename="State_Determine_Direction_Straight_Transition_2.expr" />
+		<Unit filename="State_Determine_Direction_Straight_VarRefs.mm" />
+		<Unit filename="State_Determine_Direction_Straight_Variables.h" />
+		<Unit filename="State_Entering_Intersection.h" />
+		<Unit filename="State_Entering_Intersection.mm" />
+		<Unit filename="State_Entering_Intersection_Includes.h" />
+		<Unit filename="State_Entering_Intersection_Internal.mm" />
+		<Unit filename="State_Entering_Intersection_OnEntry.mm" />
+		<Unit filename="State_Entering_Intersection_OnExit.mm" />
+		<Unit filename="State_Entering_Intersection_Transition_0.expr" />
+		<Unit filename="State_Entering_Intersection_VarRefs.mm" />
+		<Unit filename="State_Entering_Intersection_Variables.h" />
+		<Unit filename="State_In_Intersection_Aligned.h" />
+		<Unit filename="State_In_Intersection_Aligned.mm" />
+		<Unit filename="State_In_Intersection_Aligned_Includes.h" />
+		<Unit filename="State_In_Intersection_Aligned_Internal.mm" />
+		<Unit filename="State_In_Intersection_Aligned_OnEntry.mm" />
+		<Unit filename="State_In_Intersection_Aligned_OnExit.mm" />
+		<Unit filename="State_In_Intersection_Aligned_Transition_0.expr" />
+		<Unit filename="State_In_Intersection_Aligned_VarRefs.mm" />
+		<Unit filename="State_In_Intersection_Aligned_Variables.h" />
+		<Unit filename="State_Initial.h" />
+		<Unit filename="State_Initial.mm" />
+		<Unit filename="State_InitialPseudoState.h" />
+		<Unit filename="State_InitialPseudoState.mm" />
+		<Unit filename="State_InitialPseudoState_Includes.h" />
+		<Unit filename="State_InitialPseudoState_Internal.mm" />
+		<Unit filename="State_InitialPseudoState_OnEntry.mm" />
+		<Unit filename="State_InitialPseudoState_OnExit.mm" />
+		<Unit filename="State_InitialPseudoState_Transition_0.expr" />
+		<Unit filename="State_InitialPseudoState_VarRefs.mm" />
+		<Unit filename="State_InitialPseudoState_Variables.h" />
+		<Unit filename="State_Initial_Includes.h" />
+		<Unit filename="State_Initial_Internal.mm" />
+		<Unit filename="State_Initial_OnEntry.mm" />
+		<Unit filename="State_Initial_OnExit.mm" />
+		<Unit filename="State_Initial_Transition_0.expr" />
+		<Unit filename="State_Initial_VarRefs.mm" />
+		<Unit filename="State_Initial_Variables.h" />
+		<Unit filename="State_Intersection_Alignment.h" />
+		<Unit filename="State_Intersection_Alignment.mm" />
+		<Unit filename="State_Intersection_Alignment_Includes.h" />
+		<Unit filename="State_Intersection_Alignment_Internal.mm" />
+		<Unit filename="State_Intersection_Alignment_OnEntry.mm" />
+		<Unit filename="State_Intersection_Alignment_OnExit.mm" />
+		<Unit filename="State_Intersection_Alignment_Transition_0.expr" />
+		<Unit filename="State_Intersection_Alignment_Transition_1.expr" />
+		<Unit filename="State_Intersection_Alignment_VarRefs.mm" />
+		<Unit filename="State_Intersection_Alignment_Variables.h" />
+		<Unit filename="State_Intersection_Check_CentreGS.h" />
+		<Unit filename="State_Intersection_Check_CentreGS.mm" />
+		<Unit filename="State_Intersection_Check_CentreGS_Includes.h" />
+		<Unit filename="State_Intersection_Check_CentreGS_Internal.mm" />
+		<Unit filename="State_Intersection_Check_CentreGS_OnEntry.mm" />
+		<Unit filename="State_Intersection_Check_CentreGS_OnExit.mm" />
+		<Unit filename="State_Intersection_Check_CentreGS_Transition_0.expr" />
+		<Unit filename="State_Intersection_Check_CentreGS_Transition_1.expr" />
+		<Unit filename="State_Intersection_Check_CentreGS_Transition_2.expr" />
+		<Unit filename="State_Intersection_Check_CentreGS_VarRefs.mm" />
+		<Unit filename="State_Intersection_Check_CentreGS_Variables.h" />
+		<Unit filename="State_Intersection_Check_LeftGS.h" />
+		<Unit filename="State_Intersection_Check_LeftGS.mm" />
+		<Unit filename="State_Intersection_Check_LeftGS_Includes.h" />
+		<Unit filename="State_Intersection_Check_LeftGS_Internal.mm" />
+		<Unit filename="State_Intersection_Check_LeftGS_OnEntry.mm" />
+		<Unit filename="State_Intersection_Check_LeftGS_OnExit.mm" />
+		<Unit filename="State_Intersection_Check_LeftGS_Transition_0.expr" />
+		<Unit filename="State_Intersection_Check_LeftGS_Transition_1.expr" />
+		<Unit filename="State_Intersection_Check_LeftGS_Transition_2.expr" />
+		<Unit filename="State_Intersection_Check_LeftGS_VarRefs.mm" />
+		<Unit filename="State_Intersection_Check_LeftGS_Variables.h" />
+		<Unit filename="State_Intersection_Check_RightGS.h" />
+		<Unit filename="State_Intersection_Check_RightGS.mm" />
+		<Unit filename="State_Intersection_Check_RightGS_Includes.h" />
+		<Unit filename="State_Intersection_Check_RightGS_Internal.mm" />
+		<Unit filename="State_Intersection_Check_RightGS_OnEntry.mm" />
+		<Unit filename="State_Intersection_Check_RightGS_OnExit.mm" />
+		<Unit filename="State_Intersection_Check_RightGS_Transition_0.expr" />
+		<Unit filename="State_Intersection_Check_RightGS_Transition_1.expr" />
+		<Unit filename="State_Intersection_Check_RightGS_Transition_2.expr" />
+		<Unit filename="State_Intersection_Check_RightGS_VarRefs.mm" />
+		<Unit filename="State_Intersection_Check_RightGS_Variables.h" />
+		<Unit filename="State_LeftGS_Detects_Intersection.h" />
+		<Unit filename="State_LeftGS_Detects_Intersection.mm" />
+		<Unit filename="State_LeftGS_Detects_Intersection_Includes.h" />
+		<Unit filename="State_LeftGS_Detects_Intersection_Internal.mm" />
+		<Unit filename="State_LeftGS_Detects_Intersection_OnEntry.mm" />
+		<Unit filename="State_LeftGS_Detects_Intersection_OnExit.mm" />
+		<Unit filename="State_LeftGS_Detects_Intersection_Transition_0.expr" />
+		<Unit filename="State_LeftGS_Detects_Intersection_VarRefs.mm" />
+		<Unit filename="State_LeftGS_Detects_Intersection_Variables.h" />
+		<Unit filename="State_LeftGS_Detects_Nothing.h" />
+		<Unit filename="State_LeftGS_Detects_Nothing.mm" />
+		<Unit filename="State_LeftGS_Detects_Nothing_Includes.h" />
+		<Unit filename="State_LeftGS_Detects_Nothing_Internal.mm" />
+		<Unit filename="State_LeftGS_Detects_Nothing_OnEntry.mm" />
+		<Unit filename="State_LeftGS_Detects_Nothing_OnExit.mm" />
+		<Unit filename="State_LeftGS_Detects_Nothing_Transition_0.expr" />
+		<Unit filename="State_LeftGS_Detects_Nothing_VarRefs.mm" />
+		<Unit filename="State_LeftGS_Detects_Nothing_Variables.h" />
+		<Unit filename="State_LeftGS_Detects_Path.h" />
+		<Unit filename="State_LeftGS_Detects_Path.mm" />
+		<Unit filename="State_LeftGS_Detects_Path_Includes.h" />
+		<Unit filename="State_LeftGS_Detects_Path_Internal.mm" />
+		<Unit filename="State_LeftGS_Detects_Path_OnEntry.mm" />
+		<Unit filename="State_LeftGS_Detects_Path_OnExit.mm" />
+		<Unit filename="State_LeftGS_Detects_Path_Transition_0.expr" />
+		<Unit filename="State_LeftGS_Detects_Path_VarRefs.mm" />
+		<Unit filename="State_LeftGS_Detects_Path_Variables.h" />
+		<Unit filename="State_Left_Is_Available.h" />
+		<Unit filename="State_Left_Is_Available.mm" />
+		<Unit filename="State_Left_Is_Available_Includes.h" />
+		<Unit filename="State_Left_Is_Available_Internal.mm" />
+		<Unit filename="State_Left_Is_Available_OnEntry.mm" />
+		<Unit filename="State_Left_Is_Available_OnExit.mm" />
+		<Unit filename="State_Left_Is_Available_Transition_0.expr" />
+		<Unit filename="State_Left_Is_Available_VarRefs.mm" />
+		<Unit filename="State_Left_Is_Available_Variables.h" />
+		<Unit filename="State_May_Need_Align_Beyond_Intersection.h" />
+		<Unit filename="State_May_Need_Align_Beyond_Intersection.mm" />
+		<Unit filename="State_May_Need_Align_Beyond_Intersection_Includes.h" />
+		<Unit filename="State_May_Need_Align_Beyond_Intersection_Internal.mm" />
+		<Unit filename="State_May_Need_Align_Beyond_Intersection_OnEntry.mm" />
+		<Unit filename="State_May_Need_Align_Beyond_Intersection_OnExit.mm" />
+		<Unit filename="State_May_Need_Align_Beyond_Intersection_Transition_0.expr" />
+		<Unit filename="State_May_Need_Align_Beyond_Intersection_Transition_1.expr" />
+		<Unit filename="State_May_Need_Align_Beyond_Intersection_VarRefs.mm" />
+		<Unit filename="State_May_Need_Align_Beyond_Intersection_Variables.h" />
+		<Unit filename="State_May_Need_Align_In_Intersection.h" />
+		<Unit filename="State_May_Need_Align_In_Intersection.mm" />
+		<Unit filename="State_May_Need_Align_In_Intersection_Includes.h" />
+		<Unit filename="State_May_Need_Align_In_Intersection_Internal.mm" />
+		<Unit filename="State_May_Need_Align_In_Intersection_OnEntry.mm" />
+		<Unit filename="State_May_Need_Align_In_Intersection_OnExit.mm" />
+		<Unit filename="State_May_Need_Align_In_Intersection_Transition_0.expr" />
+		<Unit filename="State_May_Need_Align_In_Intersection_Transition_1.expr" />
+		<Unit filename="State_May_Need_Align_In_Intersection_VarRefs.mm" />
+		<Unit filename="State_May_Need_Align_In_Intersection_Variables.h" />
+		<Unit filename="State_Not_Detected_Intersection.h" />
+		<Unit filename="State_Not_Detected_Intersection.mm" />
+		<Unit filename="State_Not_Detected_Intersection_Includes.h" />
+		<Unit filename="State_Not_Detected_Intersection_Internal.mm" />
+		<Unit filename="State_Not_Detected_Intersection_OnEntry.mm" />
+		<Unit filename="State_Not_Detected_Intersection_OnExit.mm" />
+		<Unit filename="State_Not_Detected_Intersection_Transition_0.expr" />
+		<Unit filename="State_Not_Detected_Intersection_VarRefs.mm" />
+		<Unit filename="State_Not_Detected_Intersection_Variables.h" />
+		<Unit filename="State_Observe.h" />
+		<Unit filename="State_Observe.mm" />
+		<Unit filename="State_Observe_Includes.h" />
+		<Unit filename="State_Observe_Internal.mm" />
+		<Unit filename="State_Observe_OnEntry.mm" />
+		<Unit filename="State_Observe_OnExit.mm" />
+		<Unit filename="State_Observe_Transition_0.expr" />
+		<Unit filename="State_Observe_Transition_1.expr" />
+		<Unit filename="State_Observe_Transition_2.expr" />
+		<Unit filename="State_Observe_VarRefs.mm" />
+		<Unit filename="State_Observe_Variables.h" />
+		<Unit filename="State_RightGS_Detects_Intersection.h" />
+		<Unit filename="State_RightGS_Detects_Intersection.mm" />
+		<Unit filename="State_RightGS_Detects_Intersection_Includes.h" />
+		<Unit filename="State_RightGS_Detects_Intersection_Internal.mm" />
+		<Unit filename="State_RightGS_Detects_Intersection_OnEntry.mm" />
+		<Unit filename="State_RightGS_Detects_Intersection_OnExit.mm" />
+		<Unit filename="State_RightGS_Detects_Intersection_Transition_0.expr" />
+		<Unit filename="State_RightGS_Detects_Intersection_VarRefs.mm" />
+		<Unit filename="State_RightGS_Detects_Intersection_Variables.h" />
+		<Unit filename="State_RightGS_Detects_Nothing.h" />
+		<Unit filename="State_RightGS_Detects_Nothing.mm" />
+		<Unit filename="State_RightGS_Detects_Nothing_Includes.h" />
+		<Unit filename="State_RightGS_Detects_Nothing_Internal.mm" />
+		<Unit filename="State_RightGS_Detects_Nothing_OnEntry.mm" />
+		<Unit filename="State_RightGS_Detects_Nothing_OnExit.mm" />
+		<Unit filename="State_RightGS_Detects_Nothing_Transition_0.expr" />
+		<Unit filename="State_RightGS_Detects_Nothing_VarRefs.mm" />
+		<Unit filename="State_RightGS_Detects_Nothing_Variables.h" />
+		<Unit filename="State_RightGS_Detects_Path.h" />
+		<Unit filename="State_RightGS_Detects_Path.mm" />
+		<Unit filename="State_RightGS_Detects_Path_Includes.h" />
+		<Unit filename="State_RightGS_Detects_Path_Internal.mm" />
+		<Unit filename="State_RightGS_Detects_Path_OnEntry.mm" />
+		<Unit filename="State_RightGS_Detects_Path_OnExit.mm" />
+		<Unit filename="State_RightGS_Detects_Path_Transition_0.expr" />
+		<Unit filename="State_RightGS_Detects_Path_VarRefs.mm" />
+		<Unit filename="State_RightGS_Detects_Path_Variables.h" />
+		<Unit filename="State_Right_Is_Available.h" />
+		<Unit filename="State_Right_Is_Available.mm" />
+		<Unit filename="State_Right_Is_Available_Includes.h" />
+		<Unit filename="State_Right_Is_Available_Internal.mm" />
+		<Unit filename="State_Right_Is_Available_OnEntry.mm" />
+		<Unit filename="State_Right_Is_Available_OnExit.mm" />
+		<Unit filename="State_Right_Is_Available_Transition_0.expr" />
+		<Unit filename="State_Right_Is_Available_VarRefs.mm" />
+		<Unit filename="State_Right_Is_Available_Variables.h" />
+		<Unit filename="State_SUSPENDED.h" />
+		<Unit filename="State_SUSPENDED.mm" />
+		<Unit filename="State_SUSPENDED_Includes.h" />
+		<Unit filename="State_SUSPENDED_Internal.mm" />
+		<Unit filename="State_SUSPENDED_OnEntry.mm" />
+		<Unit filename="State_SUSPENDED_OnExit.mm" />
+		<Unit filename="State_SUSPENDED_VarRefs.mm" />
+		<Unit filename="State_SUSPENDED_Variables.h" />
+		<Unit filename="State_Straight_Is_Available.h" />
+		<Unit filename="State_Straight_Is_Available.mm" />
+		<Unit filename="State_Straight_Is_Available_Includes.h" />
+		<Unit filename="State_Straight_Is_Available_Internal.mm" />
+		<Unit filename="State_Straight_Is_Available_OnEntry.mm" />
+		<Unit filename="State_Straight_Is_Available_OnExit.mm" />
+		<Unit filename="State_Straight_Is_Available_Transition_0.expr" />
+		<Unit filename="State_Straight_Is_Available_Transition_1.expr" />
+		<Unit filename="State_Straight_Is_Available_VarRefs.mm" />
+		<Unit filename="State_Straight_Is_Available_Variables.h" />
+		<Unit filename="States">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="WindowLayout.plist" />
+		<Unit filename="epuckIntersectionByGSM.h">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="epuckIntersectionByGSM.mm">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="epuckIntersectionByGSM_Includes.h">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="epuckIntersectionByGSM_VarRefs.mm">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="epuckIntersectionByGSM_Variables.h">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="package.xml">
+			<Option virtualFolder="catkin/" />
+		</Unit>
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

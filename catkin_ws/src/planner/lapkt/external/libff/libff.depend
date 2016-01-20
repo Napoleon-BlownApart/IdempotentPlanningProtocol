@@ -1,0 +1,136 @@
+# depslib dependency file v1.0
+1427567011 source:/home/nap/Downloads/lapkt/external/libff/expressions.c
+	<string.h>
+	"ff.h"
+	"output.h"
+	"memory.h"
+	"expressions.h"
+
+1427567011 /home/nap/Downloads/lapkt/external/libff/ff.h
+	<stdlib.h>
+	<stdio.h>
+	<strings.h>
+	<ctype.h>
+	<sys/types.h>
+	<sys/timeb.h>
+	<sys/times.h>
+
+1427567011 /home/nap/Downloads/lapkt/external/libff/output.h
+
+1427567011 /home/nap/Downloads/lapkt/external/libff/memory.h
+	<string.h>
+
+1427567011 /home/nap/Downloads/lapkt/external/libff/expressions.h
+
+1427567011 source:/home/nap/Downloads/lapkt/external/libff/inst_easy.c
+	"ff.h"
+	"output.h"
+	"memory.h"
+	"expressions.h"
+	"inst_pre.h"
+	"inst_easy.h"
+
+1427567011 /home/nap/Downloads/lapkt/external/libff/inst_pre.h
+
+1427567011 /home/nap/Downloads/lapkt/external/libff/inst_easy.h
+
+1427567011 source:/home/nap/Downloads/lapkt/external/libff/inst_final.c
+	"ff.h"
+	"output.h"
+	"memory.h"
+	"expressions.h"
+	"inst_pre.h"
+	"inst_final.h"
+	<stdlib.h>
+
+1427567011 /home/nap/Downloads/lapkt/external/libff/inst_final.h
+
+1427567011 source:/home/nap/Downloads/lapkt/external/libff/inst_hard.c
+	"ff.h"
+	"output.h"
+	"memory.h"
+	"expressions.h"
+	"inst_pre.h"
+	"inst_hard.h"
+
+1427567011 /home/nap/Downloads/lapkt/external/libff/inst_hard.h
+
+1427567011 source:/home/nap/Downloads/lapkt/external/libff/inst_pre.c
+	<string.h>
+	"ff.h"
+	"output.h"
+	"memory.h"
+	"expressions.h"
+	"inst_pre.h"
+
+1427567011 source:/home/nap/Downloads/lapkt/external/libff/libff.c
+	"libff.h"
+	"memory.h"
+	"output.h"
+	"parse.h"
+	"expressions.h"
+	"inst_pre.h"
+	"inst_easy.h"
+	"inst_hard.h"
+	"inst_final.h"
+
+1427567011 /home/nap/Downloads/lapkt/external/libff/libff.h
+	<string>
+	<vector>
+	"ff.h"
+
+1427567011 /home/nap/Downloads/lapkt/external/libff/parse.h
+
+1427567011 source:/home/nap/Downloads/lapkt/external/libff/main.c
+	"ff.h"
+	"memory.h"
+	"output.h"
+	"parse.h"
+	"expressions.h"
+	"inst_pre.h"
+	"inst_easy.h"
+	"inst_hard.h"
+	"inst_final.h"
+	"relax.h"
+	"search.h"
+
+1427567011 /home/nap/Downloads/lapkt/external/libff/relax.h
+
+1427567011 /home/nap/Downloads/lapkt/external/libff/search.h
+
+1427567011 source:/home/nap/Downloads/lapkt/external/libff/memory.c
+	<string.h>
+	"ff.h"
+	"memory.h"
+	"inst_pre.h"
+
+1427567011 source:/home/nap/Downloads/lapkt/external/libff/output.c
+	"ff.h"
+	"utility.h"
+	"output.h"
+
+1427567011 /home/nap/Downloads/lapkt/external/libff/utility.h
+	"ff.h"
+
+1427567011 source:/home/nap/Downloads/lapkt/external/libff/parse.c
+	"ff.h"
+	"memory.h"
+	"output.h"
+	"parse.h"
+
+1427567011 source:/home/nap/Downloads/lapkt/external/libff/relax.c
+	"ff.h"
+	"output.h"
+	"memory.h"
+	"expressions.h"
+	"relax.h"
+	"search.h"
+
+1427567011 source:/home/nap/Downloads/lapkt/external/libff/search.c
+	"ff.h"
+	"output.h"
+	"memory.h"
+	"expressions.h"
+	"relax.h"
+	"search.h"
+

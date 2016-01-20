@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="catkin_make_Debug" />
+	<File name="CMakeLists.txt" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="971" topLine="12" />
+		</Cursor>
+	</File>
+	<File name="include/rosCallback.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="11134" topLine="281" />
+		</Cursor>
+	</File>
+	<File name="include/gu_util.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="8059" topLine="146" />
+		</Cursor>
+	</File>
+	<File name="src/guwhiteboardrosbridge.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="106" />
+		</Cursor>
+	</File>
+	<File name="include/gwrbClass.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6521" topLine="127" />
+		</Cursor>
+	</File>
+	<File name="include/guwhiteboardposter.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1946" topLine="24" />
+		</Cursor>
+	</File>
+	<File name="package.xml" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="985" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src/gwrbClass.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="20832" topLine="479" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>

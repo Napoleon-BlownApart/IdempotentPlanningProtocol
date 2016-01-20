@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="libff" />
+		<Option pch_mode="2" />
+		<Option compiler="clang" />
+		<Option virtualFolders="C++ Source/;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/libff" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="libff" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Weverything" />
+		</Compiler>
+		<Unit filename="expressions.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="expressions.h" />
+		<Unit filename="ff.h" />
+		<Unit filename="inst_easy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="inst_easy.h" />
+		<Unit filename="inst_final.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="inst_final.h" />
+		<Unit filename="inst_hard.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="inst_hard.h" />
+		<Unit filename="inst_pre.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="inst_pre.h" />
+		<Unit filename="jenkins_c_version.h" />
+		<Unit filename="libff.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libff.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="memory.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="memory.h" />
+		<Unit filename="output.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="output.h" />
+		<Unit filename="parse.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="parse.h" />
+		<Unit filename="relax.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="relax.h" />
+		<Unit filename="search.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="search.h" />
+		<Unit filename="unsigned_vec_hash_set.h" />
+		<Unit filename="utility.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="utility.h" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,1 @@
+(!(possibleDirections & STRAIGHT) && (gsCenterPathTrigger>=SENSOR_TRIGGER_SIZE) && ((gsLeftPathTrigger == 0) || (gsRightPathTrigger == 0)))

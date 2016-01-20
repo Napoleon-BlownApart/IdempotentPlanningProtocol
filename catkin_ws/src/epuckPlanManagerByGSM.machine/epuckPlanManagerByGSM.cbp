@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="epuckPlanManagerByGSM" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="2" />
+		<Option compiler="clang" />
+		<Option virtualFolders="_machine/;catkin/;" />
+		<MakeCommands>
+			<Build command="" />
+			<CompileFile command="" />
+			<Clean command="$catkin_ws/catkin_clean_script.sh" />
+			<DistClean command="$make -f $makefile distclean$target" />
+			<AskRebuildNeeded command="" />
+			<SilentBuild command=" &gt; $(CMD_NULL)" />
+		</MakeCommands>
+		<Build>
+			<Target title="catkin_DEBUG">
+				<Option output="epuckPlanManagerByGSM" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="$catkin_ws/catkin_make_script.sh  catkin $catkin_ws $PROJECTDIR Debug" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$catkin_ws/catkin_make_script.sh  catkin $catkin_ws $PROJECTDIR Debug &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="catkin_RELEASE">
+				<Option output="epuckPlanManagerByGSM" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+				<MakeCommands>
+					<Build command="$catkin_ws/catkin_make_script.sh  catkin $catkin_ws $PROJECTDIR Release" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$catkin_ws/catkin_make_script.sh  catkin $catkin_ws $PROJECTDIR Release &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="catkin_make_DEBUG">
+				<Option output="epuckPlanManagerByGSM" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="$catkin_ws/catkin_make_script.sh  catkin_make $catkin_ws $PROJECTDIR Debug" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$catkin_ws/catkin_make_script.sh  catkin_make $catkin_ws $PROJECTDIR Debug &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="catkin_make_RELEASE">
+				<Option output="epuckPlanManagerByGSM" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+				<MakeCommands>
+					<Build command="$catkin_ws/catkin_make_script.sh  catkin_make $catkin_ws $PROJECTDIR Release" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$catkin_ws/catkin_make_script.sh  catkin_make $catkin_ws $PROJECTDIR Release &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Environment>
+				<Variable name="catkin_exe" value="$workspacedir/devel/lib/$project_name" />
+				<Variable name="catkin_ws" value="$workspacedir" />
+			</Environment>
+		</Build>
+		<Compiler>
+			<Add option="-Weverything" />
+		</Compiler>
+		<ExtraCommands>
+			<Add before="cd $catkin_ws/src/gusimplewhiteboard/include/typeClassDefs &amp;&amp; ~/guwhiteboardtypegenerator" />
+			<Add after="cd $workspacedir &amp;&amp; ./make_machine_symlinks.sh" />
+		</ExtraCommands>
+		<Unit filename="CMakeLists.txt">
+			<Option virtualFolder="catkin/" />
+		</Unit>
+		<Unit filename="IncludePath">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="Layout.plist" />
+		<Unit filename="State_Add_Next_Obstacle.h" />
+		<Unit filename="State_Add_Next_Obstacle.mm" />
+		<Unit filename="State_Add_Next_Obstacle_Includes.h" />
+		<Unit filename="State_Add_Next_Obstacle_Internal.mm" />
+		<Unit filename="State_Add_Next_Obstacle_OnEntry.mm" />
+		<Unit filename="State_Add_Next_Obstacle_OnExit.mm" />
+		<Unit filename="State_Add_Next_Obstacle_Transition_0.expr" />
+		<Unit filename="State_Add_Next_Obstacle_VarRefs.mm" />
+		<Unit filename="State_Add_Next_Obstacle_Variables.h" />
+		<Unit filename="State_Get_A_Portion.h" />
+		<Unit filename="State_Get_A_Portion.mm" />
+		<Unit filename="State_Get_A_Portion_Includes.h" />
+		<Unit filename="State_Get_A_Portion_Internal.mm" />
+		<Unit filename="State_Get_A_Portion_OnEntry.mm" />
+		<Unit filename="State_Get_A_Portion_OnExit.mm" />
+		<Unit filename="State_Get_A_Portion_Transition_0.expr" />
+		<Unit filename="State_Get_A_Portion_VarRefs.mm" />
+		<Unit filename="State_Get_A_Portion_Variables.h" />
+		<Unit filename="State_Initial.h" />
+		<Unit filename="State_Initial.mm" />
+		<Unit filename="State_InitialPseudoState.h" />
+		<Unit filename="State_InitialPseudoState.mm" />
+		<Unit filename="State_InitialPseudoState_Includes.h" />
+		<Unit filename="State_InitialPseudoState_Internal.mm" />
+		<Unit filename="State_InitialPseudoState_OnEntry.mm" />
+		<Unit filename="State_InitialPseudoState_OnExit.mm" />
+		<Unit filename="State_InitialPseudoState_Transition_0.expr" />
+		<Unit filename="State_InitialPseudoState_VarRefs.mm" />
+		<Unit filename="State_InitialPseudoState_Variables.h" />
+		<Unit filename="State_Initial_Includes.h" />
+		<Unit filename="State_Initial_Internal.mm" />
+		<Unit filename="State_Initial_OnEntry.mm" />
+		<Unit filename="State_Initial_OnExit.mm" />
+		<Unit filename="State_Initial_Transition_0.expr" />
+		<Unit filename="State_Initial_VarRefs.mm" />
+		<Unit filename="State_Initial_Variables.h" />
+		<Unit filename="State_Is_Array_Full.h" />
+		<Unit filename="State_Is_Array_Full.mm" />
+		<Unit filename="State_Is_Array_Full_Includes.h" />
+		<Unit filename="State_Is_Array_Full_Internal.mm" />
+		<Unit filename="State_Is_Array_Full_OnEntry.mm" />
+		<Unit filename="State_Is_Array_Full_OnExit.mm" />
+		<Unit filename="State_Is_Array_Full_Transition_0.expr" />
+		<Unit filename="State_Is_Array_Full_Transition_1.expr" />
+		<Unit filename="State_Is_Array_Full_VarRefs.mm" />
+		<Unit filename="State_Is_Array_Full_Variables.h" />
+		<Unit filename="State_Is_This_The_End.h" />
+		<Unit filename="State_Is_This_The_End.mm" />
+		<Unit filename="State_Is_This_The_End_Includes.h" />
+		<Unit filename="State_Is_This_The_End_Internal.mm" />
+		<Unit filename="State_Is_This_The_End_OnEntry.mm" />
+		<Unit filename="State_Is_This_The_End_OnExit.mm" />
+		<Unit filename="State_Is_This_The_End_Transition_0.expr" />
+		<Unit filename="State_Is_This_The_End_Transition_1.expr" />
+		<Unit filename="State_Is_This_The_End_VarRefs.mm" />
+		<Unit filename="State_Is_This_The_End_Variables.h" />
+		<Unit filename="State_Last_Obstacle_Only.h" />
+		<Unit filename="State_Last_Obstacle_Only.mm" />
+		<Unit filename="State_Last_Obstacle_Only_Includes.h" />
+		<Unit filename="State_Last_Obstacle_Only_Internal.mm" />
+		<Unit filename="State_Last_Obstacle_Only_OnEntry.mm" />
+		<Unit filename="State_Last_Obstacle_Only_OnExit.mm" />
+		<Unit filename="State_Last_Obstacle_Only_Transition_0.expr" />
+		<Unit filename="State_Last_Obstacle_Only_VarRefs.mm" />
+		<Unit filename="State_Last_Obstacle_Only_Variables.h" />
+		<Unit filename="State_Load_Obstacles.h" />
+		<Unit filename="State_Load_Obstacles.mm" />
+		<Unit filename="State_Load_Obstacles_Includes.h" />
+		<Unit filename="State_Load_Obstacles_Internal.mm" />
+		<Unit filename="State_Load_Obstacles_OnEntry.mm" />
+		<Unit filename="State_Load_Obstacles_OnExit.mm" />
+		<Unit filename="State_Load_Obstacles_Transition_0.expr" />
+		<Unit filename="State_Load_Obstacles_VarRefs.mm" />
+		<Unit filename="State_Load_Obstacles_Variables.h" />
+		<Unit filename="State_No_Change.h" />
+		<Unit filename="State_No_Change.mm" />
+		<Unit filename="State_No_Change_Includes.h" />
+		<Unit filename="State_No_Change_Internal.mm" />
+		<Unit filename="State_No_Change_OnEntry.mm" />
+		<Unit filename="State_No_Change_OnExit.mm" />
+		<Unit filename="State_No_Change_Transition_0.expr" />
+		<Unit filename="State_No_Change_VarRefs.mm" />
+		<Unit filename="State_No_Change_Variables.h" />
+		<Unit filename="State_Observe.h" />
+		<Unit filename="State_Observe.mm" />
+		<Unit filename="State_Observe_Includes.h" />
+		<Unit filename="State_Observe_Internal.mm" />
+		<Unit filename="State_Observe_OnEntry.mm" />
+		<Unit filename="State_Observe_OnExit.mm" />
+		<Unit filename="State_Observe_Transition_0.expr" />
+		<Unit filename="State_Observe_Transition_1.expr" />
+		<Unit filename="State_Observe_Transition_2.expr" />
+		<Unit filename="State_Observe_Transition_3.expr" />
+		<Unit filename="State_Observe_Transition_4.expr" />
+		<Unit filename="State_Observe_Transition_5.expr" />
+		<Unit filename="State_Observe_VarRefs.mm" />
+		<Unit filename="State_Observe_Variables.h" />
+		<Unit filename="State_Output_Obstacles.h" />
+		<Unit filename="State_Output_Obstacles.mm" />
+		<Unit filename="State_Output_Obstacles_Includes.h" />
+		<Unit filename="State_Output_Obstacles_Internal.mm" />
+		<Unit filename="State_Output_Obstacles_OnEntry.mm" />
+		<Unit filename="State_Output_Obstacles_OnExit.mm" />
+		<Unit filename="State_Output_Obstacles_Transition_0.expr" />
+		<Unit filename="State_Output_Obstacles_Transition_1.expr" />
+		<Unit filename="State_Output_Obstacles_VarRefs.mm" />
+		<Unit filename="State_Output_Obstacles_Variables.h" />
+		<Unit filename="State_Plan_Settings.h" />
+		<Unit filename="State_Plan_Settings.mm" />
+		<Unit filename="State_Plan_Settings_Includes.h" />
+		<Unit filename="State_Plan_Settings_Internal.mm" />
+		<Unit filename="State_Plan_Settings_OnEntry.mm" />
+		<Unit filename="State_Plan_Settings_OnExit.mm" />
+		<Unit filename="State_Plan_Settings_Transition_0.expr" />
+		<Unit filename="State_Plan_Settings_VarRefs.mm" />
+		<Unit filename="State_Plan_Settings_Variables.h" />
+		<Unit filename="State_Receive_New_Plan.h" />
+		<Unit filename="State_Receive_New_Plan.mm" />
+		<Unit filename="State_Receive_New_Plan_Includes.h" />
+		<Unit filename="State_Receive_New_Plan_Internal.mm" />
+		<Unit filename="State_Receive_New_Plan_OnEntry.mm" />
+		<Unit filename="State_Receive_New_Plan_OnExit.mm" />
+		<Unit filename="State_Receive_New_Plan_Transition_0.expr" />
+		<Unit filename="State_Receive_New_Plan_VarRefs.mm" />
+		<Unit filename="State_Receive_New_Plan_Variables.h" />
+		<Unit filename="State_Record_Obstacle.h" />
+		<Unit filename="State_Record_Obstacle.mm" />
+		<Unit filename="State_Record_Obstacle_Includes.h" />
+		<Unit filename="State_Record_Obstacle_Internal.mm" />
+		<Unit filename="State_Record_Obstacle_OnEntry.mm" />
+		<Unit filename="State_Record_Obstacle_OnExit.mm" />
+		<Unit filename="State_Record_Obstacle_Transition_0.expr" />
+		<Unit filename="State_Record_Obstacle_Transition_1.expr" />
+		<Unit filename="State_Record_Obstacle_VarRefs.mm" />
+		<Unit filename="State_Record_Obstacle_Variables.h" />
+		<Unit filename="State_Request_New_Plan.h" />
+		<Unit filename="State_Request_New_Plan.mm" />
+		<Unit filename="State_Request_New_Plan_Includes.h" />
+		<Unit filename="State_Request_New_Plan_Internal.mm" />
+		<Unit filename="State_Request_New_Plan_OnEntry.mm" />
+		<Unit filename="State_Request_New_Plan_OnExit.mm" />
+		<Unit filename="State_Request_New_Plan_Transition_0.expr" />
+		<Unit filename="State_Request_New_Plan_VarRefs.mm" />
+		<Unit filename="State_Request_New_Plan_Variables.h" />
+		<Unit filename="State_Save_Obstacles.h" />
+		<Unit filename="State_Save_Obstacles.mm" />
+		<Unit filename="State_Save_Obstacles_Includes.h" />
+		<Unit filename="State_Save_Obstacles_Internal.mm" />
+		<Unit filename="State_Save_Obstacles_OnEntry.mm" />
+		<Unit filename="State_Save_Obstacles_OnExit.mm" />
+		<Unit filename="State_Save_Obstacles_Transition_0.expr" />
+		<Unit filename="State_Save_Obstacles_VarRefs.mm" />
+		<Unit filename="State_Save_Obstacles_Variables.h" />
+		<Unit filename="State_Send_Obstacles.h" />
+		<Unit filename="State_Send_Obstacles.mm" />
+		<Unit filename="State_Send_Obstacles_Includes.h" />
+		<Unit filename="State_Send_Obstacles_Internal.mm" />
+		<Unit filename="State_Send_Obstacles_OnEntry.mm" />
+		<Unit filename="State_Send_Obstacles_OnExit.mm" />
+		<Unit filename="State_Send_Obstacles_Transition_0.expr" />
+		<Unit filename="State_Send_Obstacles_VarRefs.mm" />
+		<Unit filename="State_Send_Obstacles_Variables.h" />
+		<Unit filename="State_Set_Next_Goal.h" />
+		<Unit filename="State_Set_Next_Goal.mm" />
+		<Unit filename="State_Set_Next_Goal_Includes.h" />
+		<Unit filename="State_Set_Next_Goal_Internal.mm" />
+		<Unit filename="State_Set_Next_Goal_OnEntry.mm" />
+		<Unit filename="State_Set_Next_Goal_OnExit.mm" />
+		<Unit filename="State_Set_Next_Goal_Transition_0.expr" />
+		<Unit filename="State_Set_Next_Goal_VarRefs.mm" />
+		<Unit filename="State_Set_Next_Goal_Variables.h" />
+		<Unit filename="States">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="WindowLayout.plist" />
+		<Unit filename="epuckPlanManagerByGSM.h">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="epuckPlanManagerByGSM.mm">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="epuckPlanManagerByGSM_Includes.h">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="epuckPlanManagerByGSM_VarRefs.mm">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="epuckPlanManagerByGSM_Variables.h">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="package.xml">
+			<Option virtualFolder="catkin/" />
+		</Unit>
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

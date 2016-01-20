@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="planner" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="LAPKT_interfaces_agnostic/;LAPKT_interfaces_agnostic/Sources/;LAPKT_interfaces_agnostic/Headers/;LAPKT_interfaces_ff_wrapped/;LAPKT_interfaces_ff_wrapped/Sources/;LAPKT_interfaces_ff_wrapped/Headers/;planner/;planner/Headers/;planner/Sources/;" />
+		<Build>
+			<Target title="Debug">
+				<Option output="plannerD" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++0x" />
+					<Add option="-w" />
+					<Add option="-g" />
+					<Add option="-DWHITEBOARD_POSTER_STRING_CONVERSION=1" />
+					<Add directory="include" />
+					<Add directory="/home/nap/Documents/thesis/submitted/catkin_ws/src/planner/lapkt/interfaces/agnostic" />
+					<Add directory="/home/nap/Documents/thesis/submitted/catkin_ws/src/planner/lapkt/include" />
+					<Add directory="/home/nap/Documents/thesis/submitted/catkin_ws/src/planner/lapkt/interfaces/ff-wrapped" />
+					<Add directory="/home/nap/Documents/thesis/submitted/catkin_ws/src/planner/lapkt/external" />
+					<Add directory="/home/nap/Documents/thesis/submitted/catkin_ws/src/planner/lapkt/src" />
+					<Add directory="/home/nap/src/MiPal/GUNao/posix/gusimplewhiteboard" />
+					<Add directory="/home/nap/src/MiPal/GUNao/Common" />
+					<Add directory="/usr/local/include" />
+				</Compiler>
+				<Linker>
+					<Add library="ff" />
+					<Add library="gusimplewhiteboard" />
+					<Add library="aptk" />
+					<Add directory="/home/nap/Downloads/lapkt" />
+					<Add directory="/home/nap/Downloads/lapkt/external/libff" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="plannerR" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="NULL">
+				<Option output="bin/Debug/parser" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++0x" />
+					<Add option="-g" />
+					<Add directory="include" />
+					<Add directory="/home/nap/Downloads/lapkt/interfaces/agnostic" />
+					<Add directory="/home/nap/Downloads/lapkt/include" />
+					<Add directory="/home/nap/Downloads/lapkt/interfaces/ff-wrapped" />
+					<Add directory="/home/nap/Downloads/lapkt/external" />
+					<Add directory="/usr/local/include" />
+					<Add directory="/home/nap/Downloads/lapkt/src" />
+				</Compiler>
+				<Linker>
+					<Add library="ff" />
+					<Add directory="/home/nap/Downloads/lapkt" />
+					<Add directory="/home/nap/Downloads/lapkt/external/libff" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="include/bfs_hmax.h">
+			<Option virtualFolder="planner/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/brfs_planner.h">
+			<Option virtualFolder="planner/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/dasplanner.h">
+			<Option virtualFolder="planner/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/planner.h">
+			<Option virtualFolder="planner/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/SConscript.agnostic">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/SConstruct">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/action.cxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Sources/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/action.hxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/bs_graph.hxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/cond_eff.cxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Sources/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/cond_eff.hxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/conj_comp_prob.cxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Sources/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/conj_comp_prob.hxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/ff_rp_heuristic.hxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/fl_conj.cxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Sources/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/fl_conj.hxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/fluent.cxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Sources/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/fluent.hxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/fwd_search_prob.cxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Sources/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/fwd_search_prob.hxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/h_1.hxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/h_2.hxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/h_C.hxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/h_null.hxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/h_unsat.hxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/h_unsat_mutex.hxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/landmark_count.hxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/landmark_graph.cxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Sources/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/landmark_graph.hxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/landmark_graph_generator.hxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/landmark_graph_manager.hxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/layered_h_max.hxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/match_tree.cxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Sources/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/match_tree.hxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/mutex_set.cxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Sources/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/mutex_set.hxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/novelty.hxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/novelty_partition.hxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/reachability.cxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Sources/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/reachability.hxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/rp_heuristic.hxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/strips_prob.cxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Sources/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/strips_prob.hxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/strips_state.cxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Sources/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/strips_state.hxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/succ_gen.cxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Sources/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/succ_gen.hxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/agnostic/types.hxx">
+			<Option virtualFolder="LAPKT_interfaces_agnostic/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/ff-wrapped/ff_to_aptk.cxx">
+			<Option virtualFolder="LAPKT_interfaces_ff_wrapped/Sources/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="lapkt/interfaces/ff-wrapped/ff_to_aptk.hxx">
+			<Option virtualFolder="LAPKT_interfaces_ff_wrapped/Headers/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/planner.cpp">
+			<Option virtualFolder="planner/Sources/" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<lib_finder disable_auto="1" />
+			<debugger>
+				<search_path add="/home/nap/Downloads/lapkt/external/libff" />
+			</debugger>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="epuckCourseLegByGSM" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="2" />
+		<Option compiler="clang" />
+		<Option virtualFolders="_machine/;catkin/;" />
+		<MakeCommands>
+			<Build command="" />
+			<CompileFile command="" />
+			<Clean command="$catkin_ws/catkin_clean_script.sh" />
+			<DistClean command="$make -f $makefile distclean$target" />
+			<AskRebuildNeeded command="" />
+			<SilentBuild command=" &gt; $(CMD_NULL)" />
+		</MakeCommands>
+		<Build>
+			<Target title="catkin_DEBUG">
+				<Option output="epuckCourseLegByGSM" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="$catkin_ws/catkin_make_script.sh  catkin $catkin_ws $PROJECTDIR Debug" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$catkin_ws/catkin_make_script.sh  catkin $catkin_ws $PROJECTDIR Debug &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="catkin_RELEASE">
+				<Option output="epuckCourseLegByGSM" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+				<MakeCommands>
+					<Build command="$catkin_ws/catkin_make_script.sh  catkin $catkin_ws $PROJECTDIR Release" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$catkin_ws/catkin_make_script.sh  catkin $catkin_ws $PROJECTDIR Release &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="catkin_make_DEBUG">
+				<Option output="epuckCourseLegByGSM" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="$catkin_ws/catkin_make_script.sh  catkin_make $catkin_ws $PROJECTDIR Debug" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$catkin_ws/catkin_make_script.sh  catkin_make $catkin_ws $PROJECTDIR Debug &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="catkin_make_RELEASE">
+				<Option output="epuckCourseLegByGSM" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+				<MakeCommands>
+					<Build command="$catkin_ws/catkin_make_script.sh  catkin_make $catkin_ws $PROJECTDIR Release" />
+					<CompileFile command="" />
+					<Clean command="" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="" />
+					<SilentBuild command="$catkin_ws/catkin_make_script.sh  catkin_make $catkin_ws $PROJECTDIR Release &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Environment>
+				<Variable name="catkin_exe" value="$workspacedir/devel/lib/$project_name" />
+				<Variable name="catkin_ws" value="$workspacedir" />
+			</Environment>
+		</Build>
+		<Compiler>
+			<Add option="-Weverything" />
+		</Compiler>
+		<ExtraCommands>
+			<Add before="cd $catkin_ws/src/gusimplewhiteboard/include/typeClassDefs &amp;&amp; ~/guwhiteboardtypegenerator" />
+			<Add after="cd $workspacedir &amp;&amp; ./make_machine_symlinks.sh" />
+		</ExtraCommands>
+		<Unit filename="CMakeLists.txt">
+			<Option virtualFolder="catkin/" />
+		</Unit>
+		<Unit filename="IncludePath">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="Layout.plist" />
+		<Unit filename="State_At_Goal.h" />
+		<Unit filename="State_At_Goal.mm" />
+		<Unit filename="State_At_Goal_Includes.h" />
+		<Unit filename="State_At_Goal_Internal.mm" />
+		<Unit filename="State_At_Goal_OnEntry.mm" />
+		<Unit filename="State_At_Goal_OnExit.mm" />
+		<Unit filename="State_At_Goal_Transition_0.expr" />
+		<Unit filename="State_At_Goal_VarRefs.mm" />
+		<Unit filename="State_At_Goal_Variables.h" />
+		<Unit filename="State_ChooseDirection.h" />
+		<Unit filename="State_ChooseDirection.mm" />
+		<Unit filename="State_ChooseDirection_Includes.h" />
+		<Unit filename="State_ChooseDirection_Internal.mm" />
+		<Unit filename="State_ChooseDirection_OnEntry.mm" />
+		<Unit filename="State_ChooseDirection_OnExit.mm" />
+		<Unit filename="State_ChooseDirection_Transition_0.expr" />
+		<Unit filename="State_ChooseDirection_Transition_1.expr" />
+		<Unit filename="State_ChooseDirection_Transition_2.expr" />
+		<Unit filename="State_ChooseDirection_Transition_3.expr" />
+		<Unit filename="State_ChooseDirection_VarRefs.mm" />
+		<Unit filename="State_ChooseDirection_Variables.h" />
+		<Unit filename="State_Detected_Intersection.h" />
+		<Unit filename="State_Detected_Intersection.mm" />
+		<Unit filename="State_Detected_Intersection_Includes.h" />
+		<Unit filename="State_Detected_Intersection_Internal.mm" />
+		<Unit filename="State_Detected_Intersection_OnEntry.mm" />
+		<Unit filename="State_Detected_Intersection_OnExit.mm" />
+		<Unit filename="State_Detected_Intersection_Transition_0.expr" />
+		<Unit filename="State_Detected_Intersection_VarRefs.mm" />
+		<Unit filename="State_Detected_Intersection_Variables.h" />
+		<Unit filename="State_DirectionChosen.h" />
+		<Unit filename="State_DirectionChosen.mm" />
+		<Unit filename="State_DirectionChosen_Includes.h" />
+		<Unit filename="State_DirectionChosen_Internal.mm" />
+		<Unit filename="State_DirectionChosen_OnEntry.mm" />
+		<Unit filename="State_DirectionChosen_OnExit.mm" />
+		<Unit filename="State_DirectionChosen_Transition_0.expr" />
+		<Unit filename="State_DirectionChosen_VarRefs.mm" />
+		<Unit filename="State_DirectionChosen_Variables.h" />
+		<Unit filename="State_Initial.h" />
+		<Unit filename="State_Initial.mm" />
+		<Unit filename="State_InitialPseudoState.h" />
+		<Unit filename="State_InitialPseudoState.mm" />
+		<Unit filename="State_InitialPseudoState_Includes.h" />
+		<Unit filename="State_InitialPseudoState_Internal.mm" />
+		<Unit filename="State_InitialPseudoState_OnEntry.mm" />
+		<Unit filename="State_InitialPseudoState_OnExit.mm" />
+		<Unit filename="State_InitialPseudoState_Transition_0.expr" />
+		<Unit filename="State_InitialPseudoState_VarRefs.mm" />
+		<Unit filename="State_InitialPseudoState_Variables.h" />
+		<Unit filename="State_Initial_Includes.h" />
+		<Unit filename="State_Initial_Internal.mm" />
+		<Unit filename="State_Initial_OnEntry.mm" />
+		<Unit filename="State_Initial_OnExit.mm" />
+		<Unit filename="State_Initial_Transition_0.expr" />
+		<Unit filename="State_Initial_VarRefs.mm" />
+		<Unit filename="State_Initial_Variables.h" />
+		<Unit filename="State_Not_Detected_Intersection.h" />
+		<Unit filename="State_Not_Detected_Intersection.mm" />
+		<Unit filename="State_Not_Detected_Intersection_Includes.h" />
+		<Unit filename="State_Not_Detected_Intersection_Internal.mm" />
+		<Unit filename="State_Not_Detected_Intersection_OnEntry.mm" />
+		<Unit filename="State_Not_Detected_Intersection_OnExit.mm" />
+		<Unit filename="State_Not_Detected_Intersection_Transition_0.expr" />
+		<Unit filename="State_Not_Detected_Intersection_VarRefs.mm" />
+		<Unit filename="State_Not_Detected_Intersection_Variables.h" />
+		<Unit filename="State_Observe.h" />
+		<Unit filename="State_Observe.mm" />
+		<Unit filename="State_Observe_Includes.h" />
+		<Unit filename="State_Observe_Internal.mm" />
+		<Unit filename="State_Observe_OnEntry.mm" />
+		<Unit filename="State_Observe_OnExit.mm" />
+		<Unit filename="State_Observe_Transition_0.expr" />
+		<Unit filename="State_Observe_Transition_1.expr" />
+		<Unit filename="State_Observe_Transition_2.expr" />
+		<Unit filename="State_Observe_VarRefs.mm" />
+		<Unit filename="State_Observe_Variables.h" />
+		<Unit filename="State_SUSPENDED.h" />
+		<Unit filename="State_SUSPENDED.mm" />
+		<Unit filename="State_SUSPENDED_Includes.h" />
+		<Unit filename="State_SUSPENDED_Internal.mm" />
+		<Unit filename="State_SUSPENDED_OnEntry.mm" />
+		<Unit filename="State_SUSPENDED_OnExit.mm" />
+		<Unit filename="State_SUSPENDED_VarRefs.mm" />
+		<Unit filename="State_SUSPENDED_Variables.h" />
+		<Unit filename="State_Stop.h" />
+		<Unit filename="State_Stop.mm" />
+		<Unit filename="State_Stop_Includes.h" />
+		<Unit filename="State_Stop_Internal.mm" />
+		<Unit filename="State_Stop_OnEntry.mm" />
+		<Unit filename="State_Stop_OnExit.mm" />
+		<Unit filename="State_Stop_Transition_0.expr" />
+		<Unit filename="State_Stop_VarRefs.mm" />
+		<Unit filename="State_Stop_Variables.h" />
+		<Unit filename="State_Unreachable.h" />
+		<Unit filename="State_Unreachable.mm" />
+		<Unit filename="State_Unreachable_Includes.h" />
+		<Unit filename="State_Unreachable_Internal.mm" />
+		<Unit filename="State_Unreachable_OnEntry.mm" />
+		<Unit filename="State_Unreachable_OnExit.mm" />
+		<Unit filename="State_Unreachable_Transition_0.expr" />
+		<Unit filename="State_Unreachable_VarRefs.mm" />
+		<Unit filename="State_Unreachable_Variables.h" />
+		<Unit filename="State_Wait_4_Scan.h" />
+		<Unit filename="State_Wait_4_Scan.mm" />
+		<Unit filename="State_Wait_4_Scan_Includes.h" />
+		<Unit filename="State_Wait_4_Scan_Internal.mm" />
+		<Unit filename="State_Wait_4_Scan_OnEntry.mm" />
+		<Unit filename="State_Wait_4_Scan_OnExit.mm" />
+		<Unit filename="State_Wait_4_Scan_Transition_0.expr" />
+		<Unit filename="State_Wait_4_Scan_VarRefs.mm" />
+		<Unit filename="State_Wait_4_Scan_Variables.h" />
+		<Unit filename="States">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="WindowLayout.plist" />
+		<Unit filename="epuckCourseLegByGSM.h">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="epuckCourseLegByGSM.mm">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="epuckCourseLegByGSM_Includes.h">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="epuckCourseLegByGSM_VarRefs.mm">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="epuckCourseLegByGSM_Variables.h">
+			<Option virtualFolder="_machine/" />
+		</Unit>
+		<Unit filename="package.xml">
+			<Option virtualFolder="catkin/" />
+		</Unit>
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
